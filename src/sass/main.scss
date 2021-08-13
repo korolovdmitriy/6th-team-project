@@ -12,30 +12,43 @@
 @import './components/section-title';
 
 //LAYOUT
+
 @import './layout/header';
 @import './layout/header-menu';
+
+@import './layout/main-page/main-page';
 @import './layout/main-page/main-page-hero';
 @import './layout/main-page/main-page-gallery';
 @import './layout/main-page/main-page-photo';
 
 //MODELING PAGE
+@import './layout/modeling-page/modeling-page';
 @import './layout/modeling-page/modeling-page-model';
 @import './layout/modeling-page/modeling-page-methods';
 @import './layout/modeling-page/modeling-page-create';
 
 //SCANNING PAGE
+@import './layout/scanning-page/scanning-page';
 @import './layout/scanning-page/scanning-page-3d';
 @import './layout/scanning-page/scanning-page-process';
 
 //PRINTING PAGE
+@import './layout/printing-page/printing-page';
 @import './layout/printing-page/printing-page-model';
 @import './layout/printing-page/printing-page-process';
 
 //ORDER PAGE
+@import './layout/order-page/order-page';
 @import './layout/order-page/order-page-desc';
 @import './layout/order-page/order-page-form';
 @import './layout/order-page/order-page-contacts';
 @import './layout/order-page/order-page-gallery';
+
+// CONTACTS PAGE
+@import './layout/contacts-page/contacts-page';
+@import './layout/contacts-page/contacts-page-desc';
+@import './layout/contacts-page/contacts-page-contact';
+@import './layout/contacts-page/contacts-page-form';
 
 //FOOTER
 @import './layout/footer';
