@@ -31,5 +31,11 @@
 @import './layout/printing-page/printing-page-model';
 @import './layout/printing-page/printing-page-process';
 
+//ORDER PAGE
+@import './layout/order-page/order-page-desc';
+@import './layout/order-page/order-page-form';
+@import './layout/order-page/order-page-contacts';
+@import './layout/order-page/order-page-gallery';
+
 //FOOTER
 @import './layout/footer';
