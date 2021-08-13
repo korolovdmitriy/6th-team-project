@@ -1,0 +1,29 @@
+.hero__heading {
+    font-family: var(--primary-font);
+    font-size: 24px;
+    line-height: 30px;
+  
+    color: #487996;
+  
+    @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 45px;
+    }
+  
+    @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  line-height: 60px;
+    }
+}
+.hero__text {
+    font-family:var(--primary-font);
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #2B2B2B;
+    
+    @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 23px;
+    }
+    }
