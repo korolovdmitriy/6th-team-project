@@ -1,14 +1,14 @@
 
     .model__examples {
-        max-width: 320px;
+        max-width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
-
+    
     .container {
-        width: 320px;
+        width: 280px;
         padding: 0 20px 0 20px;
- }
+    }
     .we__create-text {
          font-family: var(--font-bolt);
         
@@ -20,8 +20,8 @@
         padding-left: 16px;
         
     }
-
-.example__picture-list {
+    
+    .example__picture-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -29,18 +29,18 @@
         margin-top: -16px;
         margin-bottom: -16px;
     }
-
-.example__picture-item {
+    
+    .example__picture-item {
         flex-basis: calc((100% - 184px) / 2);
         margin-top: 16px;
         margin-left: 16px;
     }
-.process__description {
-         max-width: 320px;
+    .process__description {
+         max-width: 280px;
         margin-left: auto;
         margin-right: auto;
-}
-.visually-hidden {
+    }
+    .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -51,21 +51,21 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-.strong {
+    }
+    .strong {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
     color: #487996;
-
-}
-.threedprint {
+    
+    }
+    .threedprint {
     font-weight: 300;
     size: 16px;
     line-height: 1.25;
     color: #2b2b2b;
-}
-.order-btn {
+    }
+    .order-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -77,10 +77,10 @@
     rgba(72, 121, 150, 0.10), 5px 5px 10px rgba(72, 121, 150, 0.1),
     5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #fff;
     border-radius: 30px;
-
-}
-.threed__scanning {
-    max-width: 320px;
+    
+    }
+    .threed__scanning {
+    max-width: 280px;
         margin-left: auto;
         margin-right: auto;
-}
+    }
