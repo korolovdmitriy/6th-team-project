@@ -1,14 +1,29 @@
 .container-modeling__title {
   margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 .container-modeling {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
-  &__item {
-    flex-basis: calc((100% - 32px) / 2);
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__item {
+      padding-right: 133px;
+    }
+  }
+  @media screen and (min-width: 1444px) {
+    margin-bottom: 100px;
+
+    &__item {
+      flex-basis: calc((100% - 32px) / 2);
+      padding-right: 0px;
+    }
   }
 }
