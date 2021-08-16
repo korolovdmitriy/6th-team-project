@@ -81,6 +81,13 @@
     max-width: 516px;
     height: 316px;
     margin-right: 20px;
+    background-image: url('../images/desctop/take-order/take-order-1.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/desctop/take-order/take-order-1@2x.jpg');
   }
 }
 
@@ -138,21 +145,21 @@
 }
 
 .order-desc-picset__item--flag {
-  background-image: url('https://picsum.photos/id/165/144');
+  background-image: url('../images/desctop/take-order/take-order-2.jpg');
 
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 
 .order-desc-picset__item--leaf {
-  background-image: url(https://picsum.photos/id/175/144);
+  background-image: url('../images/desctop/take-order/take-order-3.jpg');
 
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 
 .order-desc-picset__item--fan {
-  background-image: url(https://picsum.photos/id/187/144);
+  background-image: url('../images/desctop/take-order/take-order-4.jpg');
 
   border-bottom-right-radius: 50%;
 }
