@@ -1,0 +1,14 @@
+.container-modeling__title {
+  margin-bottom: 24px;
+}
+
+.container-modeling {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+  &__item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
