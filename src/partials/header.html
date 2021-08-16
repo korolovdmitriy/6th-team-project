@@ -1,10 +1,10 @@
 <header class="header">
-  <div class="header__container">
+  <div class=" header__container">
     <nav class="navigation">
-      <a href="../src/index.html" class="logo-link">
-        <img src="/images/logo.jpg" alt="логотип" width="192" height="48" class="logo-link__icon" />
+      <a href="../src/index.html" class="logo__link">
+        <img src="/images/logo.jpg" alt="логотип"  class="logo__link--icon" />
       </a>
-      <ul class="navigation__list navigation__list--reverse">
+       <ul class="navigation__list navigation__list--reverse"> 
         <li class="navigation__item"><a href="" class="navigation__link">Головна</a></li>
         <li class="navigation__item ">
           <a href="" class="navigation__link box">Послуги
@@ -24,13 +24,18 @@
             </li>
           </ul>
         </li>
-        <li class="navigation__item"><a href="" class="navigation__link"">Замовити</a></li>
+        <li class="navigation__item"><a href="" class="navigation__link">Замовити</a></li>
         <li class="navigation__item"><a href="" class="navigation__link">Контакти</a></li>
       </ul>
       
     </nav>
+    <button class="burger-btn" data-menu-open>
+      <svg class="burger-btn__icon" width="32" height="18">
+        <use href="/images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
         <a href="" class="lang-change"><span lang="eng">ENG</span></a>
-    <!-- <button class="burger-btn"></button> -->
+    <button class="burger-btn"></button>
     <ul class="contact__list">
       <li class="contact__item">
         <a href="tel:+380936432288" class="contact__link">
