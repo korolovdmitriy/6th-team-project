@@ -1,12 +1,23 @@
 .page-title {
-  font-family: var(----font-bolt);
+  font-family: var(--primary-font);
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
   text-transform: uppercase;
   color: #487996;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+
+  @media screen and (min-width: 1444px) {
+    font-size: 48px;
+    line-height: 1.25;
+  }
 }
 
-.page-title_margin-bottom {
+.page-title--margin-bottom {
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
@@ -38,11 +49,24 @@
 
   background-image: url(https://picsum.photos/id/171/280/170);
 
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/take-order/take-order-1@2x.jpg');
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 246px;
     height: 116px;
     margin-right: 20px;
-    // background-position-y: 50px;
+    background-position-y: bottom;
+    background-image: url('../images/tablet/take-order/take-order.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/tablet/take-order/take-order@2x.jpg');
   }
 
   @media screen and (min-width: 1444px) {
@@ -51,12 +75,6 @@
     margin-right: 20px;
   }
 }
-
-// .order-page-desc__wrap {
-//   position: relative;
-//   max-width: 516px;
-//   height: 144px;
-// }
 
 .order-page-desc__list {
   @media screen and (min-width: 768px) {
@@ -95,7 +113,6 @@
     justify-content: space-between;
     align-items: center;
     max-width: 516px;
-    //   height: 144px;
   }
 }
 
@@ -112,21 +129,21 @@
   box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.25));
 }
 
-.order-desc-picset__item_flag {
-  background-image: url(https://picsum.photos/id/165/144);
+.order-desc-picset__item--flag {
+  background-image: url('https://picsum.photos/id/165/144');
 
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 
-.order-desc-picset__item_leaf {
+.order-desc-picset__item--leaf {
   background-image: url(https://picsum.photos/id/175/144);
 
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 
-.order-desc-picset__item_fan {
+.order-desc-picset__item--fan {
   background-image: url(https://picsum.photos/id/187/144);
 
   border-bottom-right-radius: 50%;
