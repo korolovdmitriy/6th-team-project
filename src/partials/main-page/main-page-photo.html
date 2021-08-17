@@ -1,3 +1,14 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
 <link rel="stylesheet" href="../src/sass/layout/main-page/_main-page-photo.scss"/>
 
 <section class="more-photo">
@@ -8,19 +19,25 @@
 
     <div class="photo-container">
 
+        
         <div class="more-photo__thumb-1 photo-thumb">
-            <picture class="more-photo__ph-1">                
-                <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-8.jpg 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.jpg 2x">
-                <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-8.webp 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 768px)" srcset="../src/images/tablet/main-tablet/main-12.jpg 1x, ../src/images/tablet/main-tablet/main-12.jpg 2x">
-                <source media="(min-width: 768px)" srcset="../src/images/tablet/main-tablet/main-12.webp 1x, ../src/images/tablet/main-tablet/main-12@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 320px)" srcset="../src/images/mobile/main-menu-mobile/main-8.jpg 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.jpg 2x"> 
-                <source media="(min-width: 320px)" srcset="../src/images/mobile/main-menu-mobile/main-8.webp 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.webp 2x" type="image/webp">
-                <img src="../src/images/mobile/main-menu-mobile/main-8.jpg" alt="3Д маленькі фігури">
-            </picture>
+            <a href=""  class="more-photo-link">            
+                <picture  class="more-photo__ph-1">                
+                    <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-8.jpg 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.jpg 2x">
+                    <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-8.webp 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="../src/images/tablet/main-tablet/main-12.jpg 1x, ../src/images/tablet/main-tablet/main-12.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="../src/images/tablet/main-tablet/main-12.webp 1x, ../src/images/tablet/main-tablet/main-12@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="../src/images/mobile/main-menu-mobile/main-8.jpg 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.jpg 2x"> 
+                    <source media="(min-width: 320px)" srcset="../src/images/mobile/main-menu-mobile/main-8.webp 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.webp 2x" type="image/webp">
+                    <img class="img-1" src="../src/images/mobile/main-menu-mobile/main-8.jpg" alt="3Д маленькі фігури">             
+                           
+             </picture>
+            </a>             
         </div>
 
+        
         <div class="more-photo__thumb-2 photo-thumb">
+            <a href=""  class="more-photo-link" data-modal-open data-modal-close>
             <picture class="more-photo__ph-1">                
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-9.jpg 1x, ../src/images/mobile/main-menu-mobile/main-9@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-9.webp 1x, ../src/images/mobile/main-menu-mobile/main-9@2x.webp 2x" type="image/webp">
@@ -28,11 +45,12 @@
                 <source media="(min-width: 768px)" srcset="../src/images/tablet/main-tablet/main-13.webp 1x, ../src/images/tablet/main-tablet/main-13@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 320px)" srcset="../src/images/mobile/main-menu-mobile/main-9.jpg 1x, ../src/images/mobile/main-menu-mobile/main-9@2x.jpg 2x">
                 <source media="(min-width: 320px)" srcset="../src/images/mobile/main-menu-mobile/main-9.webp 1x, ../src/images/mobile/main-menu-mobile/main-9@2x.webp 2x" type="image/webp"> 
-                <img src="../src/images/mobile/main-menu-mobile/main-9.jpg" alt="3Д арка">
+                <img class="img-2" src="../src/images/mobile/main-menu-mobile/main-9.jpg" alt="3Д арка">
             </picture>
+            </a>            
         </div>
 
-        <div class="more-photo__thumb-3 photo-thumb">
+        <div id="myModal" class="more-photo__thumb-3 photo-thumb modal">
             <picture class="more-photo__ph-1">
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.jpg 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.webp 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.webp 2x" type="image/webp">
@@ -44,9 +62,7 @@
             </picture>
         </div>
 
-        <div class="photo-thumb-tablet">
-
-        <div class="more-photo__thumb-4 photo-thumb">
+        <div class="more-photo__thumb-4 photo-thumb photo-thumb-tablet">
             <picture class="more-photo__ph-1">
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.jpg 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.webp 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.webp 2x" type="image/webp">
@@ -56,7 +72,7 @@
             </picture>
         </div>
 
-        <div class="more-photo__thumb-5 photo-thumb">
+        <div id="myModal" class="more-photo__thumb-5 photo-thumb photo-thumb-tablet">
             <picture class="more-photo__ph-1">
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.jpg 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.webp 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.webp 2x" type="image/webp">
@@ -66,7 +82,7 @@
             </picture>
         </div>
 
-        <div class="more-photo__thumb-6 photo-thumb">
+        <div id="myModal" class="more-photo__thumb-6 photo-thumb photo-thumb-tablet">
             <picture class="more-photo__ph-1">
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.jpg 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.webp 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.webp 2x" type="image/webp">
@@ -76,7 +92,7 @@
             </picture>
         </div>
 
-        <div class="more-photo__thumb-7 photo-thumb">
+        <div id="myModal" class="more-photo__thumb-7 photo-thumb photo-thumb-tablet">
             <picture class="more-photo__ph-1">
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.jpg 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.webp 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.webp 2x" type="image/webp">
@@ -86,7 +102,7 @@
             </picture>
         </div>
 
-        <div class="more-photo__thumb-8 photo-thumb">
+        <div id="myModal" class="more-photo__thumb-8 photo-thumb photo-thumb-tablet">
             <picture class="more-photo__ph-1">
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.jpg 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.webp 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.webp 2x" type="image/webp">
@@ -96,7 +112,7 @@
             </picture>
         </div>
 
-        <div class="more-photo__thumb-9 photo-thumb">
+        <div class="more-photo__thumb-9 photo-thumb photo-thumb-tablet">
             <picture class="more-photo__ph-1">
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.jpg 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.webp 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.webp 2x" type="image/webp">
@@ -106,7 +122,7 @@
             </picture>
         </div>
 
-        <div class="more-photo__thumb-10 photo-thumb">
+        <div class="more-photo__thumb-10 photo-thumb photo-thumb-tablet">
             <picture class="more-photo__ph-1">
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.jpg 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.webp 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.webp 2x" type="image/webp">
@@ -116,7 +132,7 @@
             </picture>
         </div>
 
-        <div class="more-photo__thumb-11 photo-thumb">
+        <div class="more-photo__thumb-11 photo-thumb photo-thumb-tablet">
             <picture class="more-photo__ph-1">
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.jpg 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.webp 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.webp 2x" type="image/webp">
@@ -126,7 +142,7 @@
             </picture>
         </div>
 
-        <div class="more-photo__thumb-12 photo-thumb">
+        <div class="more-photo__thumb-12 photo-thumb photo-thumb-tablet">
             <picture class="more-photo__ph-1">
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.jpg 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.jpg 2x"> 
                 <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-10.webp 1x, ../src/images/mobile/main-menu-mobile/main-10@2x.webp 2x" type="image/webp">
@@ -134,7 +150,7 @@
                 <source media="(min-width: 768px)" srcset="../src/images/tablet/main-tablet/main-23.webp 1x, ../src/images/tablet/main-tablet/main-23@2x.webp 2x" type="image/webp">
                 <img src="../src/images/tablet/main-tablet/main-23.jpg" alt="3Д робот">
             </picture>
-        </div>
+      
     </div>
 
 
@@ -149,3 +165,33 @@
         
     </div>
 </section>
+
+
+<div class="backdrop" data-modal>
+    <div class="modal">
+       <a href="" class="modal__link">
+        <picture  class="modal__photo">                
+            <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-8.jpg 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.jpg 2x">
+            <source media="(min-width: 1444px)" srcset="../src/images/mobile/main-menu-mobile/main-8.webp 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="../src/images/tablet/main-tablet/main-12.jpg 1x, ../src/images/tablet/main-tablet/main-12.jpg 2x">
+            <source media="(min-width: 768px)" srcset="../src/images/tablet/main-tablet/main-12.webp 1x, ../src/images/tablet/main-tablet/main-12@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 320px)" srcset="../src/images/mobile/main-menu-mobile/main-8.jpg 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.jpg 2x"> 
+            <source media="(min-width: 320px)" srcset="../src/images/mobile/main-menu-mobile/main-8.webp 1x, ../src/images/mobile/main-menu-mobile/main-8@2x.webp 2x" type="image/webp">
+            <img class="mf-1" src="../src/images/mobile/main-menu-mobile/main-8.jpg" alt="3Д маленькі фігури">            
+                   
+     </picture></a>
+    </div>
+    
+</div>
+
+<script src="../modal.js"></script>
+
+<!-- <div class="backdrop visually-hidden" data-modal>
+        <div class="modal">
+            
+        </div></div>
+ -->
+       
+
+</body>
+</html>
