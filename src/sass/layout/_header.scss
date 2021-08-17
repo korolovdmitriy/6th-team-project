@@ -1,5 +1,6 @@
-// .header {
-// }
+.header {
+  // padding-bottom: 25px;
+}
 @media screen and (max-width: 1444px) {
   .burger-btn {
     border: none;
@@ -39,6 +40,7 @@
     padding-top: 40px;
     padding-right: 80px;
     padding-left: 80px;
+    // padding-bottom: 48px;
   }
 }
 .navigation {
@@ -96,12 +98,12 @@
 
 .navigation__item {
   margin-top: 4px;
-
   position: relative;
 
   &:not(:last-child) {
     margin-right: 54px;
     &:hover .submenu {
+      visibility: visible;
       opacity: 1;
     }
   }
@@ -124,8 +126,10 @@
   translate: (50%);
   position: absolute;
   z-index: 100;
-  display: block;
+  visibility: hidden;
   opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+
   padding-top: 8px;
 }
 
@@ -150,6 +154,7 @@
   margin-left: 4px;
 }
 .lang-change {
+  font-family: var(--menu-font);
   color: #bdbdbd;
   font-size: 14px;
   font-weight: 700;
