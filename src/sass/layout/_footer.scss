@@ -11,7 +11,7 @@
   height: 42px;
   margin-bottom: 19px;
 }
-.footer__logo-img{
+.footer__logo-img {
   width: 192px;
   height: 48px;
 }
@@ -25,10 +25,20 @@
 }
 .footer__nav-link {
   letter-spacing: 0.01em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #008cef;
+  }
 }
 
 .footer__contacts-link {
   color: #487996;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #008cef;
+  }
 }
 .footer__nav {
   margin-bottom: 24px;
@@ -55,6 +65,13 @@
 .footer__tel-item {
   &:not(:last-child) {
     margin-bottom: 8px;
+  }
+}
+.footer__social-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #008cef;
   }
 }
 .footer__contacts-text {
@@ -104,7 +121,6 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 136px;
-    
   }
   .footer__contacts {
     text-align: left;
