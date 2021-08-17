@@ -1,21 +1,20 @@
-.more-photo__title{
-    font-family: var(--font-bolt);
-    font-size: 24px;
-    line-height: 30px;
-    color: #487996;
+    .more-photo{
+        padding-bottom: 84px;
+    }
+    
+    .more-photo__title{
+        font-family: var(--font-bolt);
+        font-size: 24px;
+        line-height: 1.25;
+        color: #487996;
     
     }
     
     .photo-thumb{
         margin-top: 16px;
         
-    }
-    
-    .more-photo__load-icon{
-    
-        margin-top: 32px;    
-    }
-    
+    }    
+       
     .more-photo__load-icon{
         display: flex;
         justify-content: center;
@@ -25,7 +24,11 @@
             opacity: 0.7;        
     }
 
-    .backdrop{
+    .more-photo__load-icon{
+        margin-top: 40px;       
+    }
+
+    /* .backdrop{
         position: fixed;
         padding-top: 1168px;
         padding-left: 42px;
@@ -50,80 +53,7 @@
     .modal-photo{
         width: 100%;
         height: 100%;
-    }
-
-
-
-
-  /*   .modal {
-        display: none;
-        position: fixed; 
-        z-index: 1; 
-        padding-top: 100px;  
-        left: 0;
-        top: 0;
-        width: 100%; 
-        height: 100%; 
-        overflow: auto; 
-        background-color: rgb(0,0,0); 
-        background-color: rgba(0,0,0,0.9); 
-    }
-
-    .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-    }
-
-    #caption {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        text-align: center;
-        color: #ccc;
-        padding: 10px 0;
-        height: 150px;
-    }
-
-    .modal-content, #caption {
-        animation-name: zoom;
-        animation-duration: 0.6s;
-    }
-
-    @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-}
-
-
- */
-    /* .backdrop{
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        background-color: black;
-        transition: opacity 500ms linear, visibility 500ms linear;
-    }
-    
-    .modal{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 450px;
-        height: 609px;
-        background-color: var(--main-color);
-        transform: translate(-50%, -50%);
-        padding: 40px;
-    
     } */
-    
-
-
-
 
     @media screen and (max-width: 767px) {
         .photo-thumb-tablet{
@@ -131,21 +61,81 @@
         }
     }
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
+
+        .more-photo{
+            padding-bottom: 60px;
+        }
+
+        .more-photo__thumb{
+            padding-left: 60px;      
+        }
+
         .photo-container{
             display: flex;
             flex-wrap: wrap;
+        }
+
+        .more-photo__title{
+            font-size: 36px;
+        }
+
+        .photo-thumb{
+            margin-top: 32px;            
         }
 
         .img-1{
             width: 247px;
         }
 
-        .photo-thumb:not(:last-child){
-            margin-right: 20px;
+        .photo-thumb{
+            margin-top: 20px;       
+        
+                &:not(:nth-child(3n)){
+                    margin-right: 20px;
+                }
         }
+
     }
 
+    @media screen and (min-width: 1444px) {
+        .more-photo{
+            padding-bottom: 108px;
+        }
+
+        .more-photo__thumb{
+            padding-left: 189px;      
+        }
+
+        .more-photo__title{
+            font-size: 48px;
+        }
+        
+        .photo-container{
+            margin-top: 52px;            
+        }
+
+        .photo-thumb{
+            margin-top: 32px;       
+        
+                &:not(:nth-child(3n)) {
+                    margin-right: 32px;
+                }
+        }
+
+        .img-1{
+            width: 406px;
+        }
+
+        .img-3{
+            width: 214px;
+        }
+
+        .more-photo__load-icon{
+            margin-top: 64px;       
+        }
+
+    }
 
     
     
