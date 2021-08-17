@@ -1,7 +1,19 @@
 .order-form {
+  width: 100%;
+  margin-bottom: 52px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 76px;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1444px) {
     padding-right: 114px;
     padding-left: 114px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    max-width: 515px;
+    margin-bottom: 100px;
   }
 }
 
@@ -28,6 +40,9 @@
   outline: none;
   border: none;
   border-bottom: 1px solid #487996;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2b2b2b;
 }
 
 .order-form__input:focus {
@@ -69,7 +84,7 @@
   width: 19px;
   height: 13px;
 
-  background-image: url('../images/sprite.svg#icon-triangle-down-black');
+  background-image: url('../images/sprite.svg#icon-to-down');
 
   background: {
     color: transparent;
@@ -106,8 +121,7 @@
   outline: none;
 
   &::placeholder {
-    font-family: var(--font-regular);
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     color: #cdcdcd;
@@ -116,4 +130,28 @@
 
 .order-form__message-input:focus {
   border: 1px solid #008cef;
+}
+
+.order-form__add-file-text {
+  max-width: 220px;
+  margin-bottom: 24px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: #cdcdcd;
+
+  @media screen and (min-width: 768px) and (max-width: 1444px) {
+    max-width: 420px;
+  }
+}
+
+.order-form-btn {
+  display: block;
+  margin: 0 auto;
+
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
 }
