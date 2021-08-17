@@ -1,51 +1,312 @@
-
     .model__examples {
-         margin-left: auto;
-        margin-right: auto;
-    }
-    
-    
-    .we__create-text {
-         font-family: var(--font-bolt);
-        
-        font-size: 24px;
-        line-height: 1.25;
-        color: #487996;
-        
-        margin-bottom: 16px;
-        
-        
-    }
-    
-    .example__picture-list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        margin-top: -16px;
-        margin-bottom: -16px;
-        padding: 0;
-        list-style: none;
-    }
-    
-    
-        .example__picture-item {
-            flex-basis: calc((100% - 8px) / 2);
-            margin-top: 16px;
-             
-        }  
-    
-    
-    
-    .process__description {
-         
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 52px;
-    }
-   
+            
+    margin-left: auto;
+    margin-right: auto;
+}
+.example__picture-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: -16px;
+    margin-bottom: -16px;
+    margin-right: -15px;
+    padding: 0;
+    list-style: none;
+}
+@media screen and (min-width: 1444px){
+
+    flex-wrap: nowrap;
   
-    .strong {
+}
+
+
+.example__picture-item {
+    flex-basis: calc((100% - 8px) / 2);
+    margin-top: 16px;   
+}  
+@media screen and (min-width: 1444px){
+
+    flex-basis: calc((100% - 84px) / 4);
+    margin-top: 24px;
+    
+    
+}
+
+.example__picture-block {
+    width: 133px;
+    height: 158px;
+    position: relative;
+    background: #fff;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+    border-radius: 50px 0px;
+}
+
+@media screen and (min-width: 1444px) {
+
+.example__picture-block {
+width: 250px;
+height: 298px;
+position: relative;
+}
+}
+.example__picture-block::after {
+    content: url"(../src/images/3d-printing-1.png)";
+    position: absolute;
+    width: 92px;
+    height: 76px;
+    top: 26px;
+    left: 18px;
+     
+    background-size: 133px 158px;
+}
+
+@media screen and (min-width: 1444px) {
+.example__picture-block::after {
+content: url"(../src/images/desctop/3d-printing/3d-printing-1.png)";
+position: absolute;
+width: 174px;
+height: 142px;
+top: 100px;
+left: 70px;
+}
+}
+.example__picture-block2 {
+    width: 133px;
+    height: 158px;
+    position: relative;
+    background: #fff;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+    border-radius: 50px 0px;
+}
+.example__picture-block2::after {
+    content: url(../images/3d-printing-2.jpg);
+    position: absolute;
+    width: 92px;
+    height: 76px;
+    top: 38px;
+    left: 18px;
+     
+    background-size: 133px 158px;
+}
+@media screen and (min-width: 1444px) {
+.example__picture-block2 {
+width: 250px;
+height: 298px;
+position: relative;
+background: #fff;
+opacity: 0.8;
+box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+border-radius: 50px 0px;
+}
+.example__picture-block2::after {
+content: url"(../src/images/3d-printing/3d-printing-2.png)";
+position: absolute;
+width: 194px;
+height: 120px;
+top: 110px;
+left: 70px;
+}
+}
+.example__picture-block3 {
+    width: 133px;
+    height: 158px;
+    position: relative;
+    background: #fff;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+    border-radius: 50px 0px;
+}
+.example__picture-block3::after {
+    content: url"(../src/images/3d-printing-3.jpg)";
+    position: absolute;
+    width: 92px;
+    height: 76px;
+    top: 31px;
+    left: 44px;
+     
+    background-size: 133px 158px;
+}
+
+@media screen and (min-width: 1444px) {
+.example__picture-block3 {
+width: 250px;
+height: 298px;
+position: relative;
+background: #fff;
+opacity: 0.8;
+box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+border-radius: 50px 0px;
+}
+.example__picture-block3::after {
+content: url"(../src/images/3d-printing/3d-printing-3.png)";
+position: absolute;
+width: 83px;
+height: 133px;
+top: 100px;
+left: 90px;
+}
+}
+
+.example__picture-block4 {
+    width: 133px;
+    height: 158px;
+    position: relative;
+    background: #fff;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+    border-radius: 50px 0px;
+}
+.example__picture-block4::after {
+    content: url"(../src/images/3d-printing-4.jpg)";
+    position: absolute;
+    width: 92px;
+    height: 76px;
+    top: 24px;
+    left: 24px;
+     
+    background-size: 133px 158px;
+}
+@media screen and (min-width: 1444px) {
+.example__picture-block4 {
+width: 250px;
+height: 298px;
+position: relative;
+background: #fff;
+opacity: 0.8;
+box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+border-radius: 50px 0px;
+}
+.example__picture-block4::after {
+content: url"(../src/images/3d-printing/3d-printing-4.png)";
+position: absolute;
+width: 161px;
+height: 161px;
+top: 90px;
+left: 70px;
+}
+}
+
+.example__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align; center;
+    color: #487996;
+    position: absolute;
+    bottom: 27px;
+    left: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+@media screen and (min-width: 1444px) {
+
+
+font-size: 18px;
+line-height: 1.28;
+position: absolute;
+bottom: 27px;
+left: 60px;
+}
+}
+
+.example__desc2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align; center;
+    color: #487996;
+    position: absolute;
+    bottom: 27px;
+    left: 34px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+@media screen and (min-width: 1444px) {
+
+font-size: 18px;
+line-height: 1.28;
+position: absolute;
+bottom: 27px;
+left: 80px;
+}
+}
+.example__desc3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align; center;
+    color: #487996;
+    position: absolute;
+    bottom: 27px;
+    left: 42px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+@media screen and (min-width: 1444px) {
+
+font-size: 18px;
+position: absolute;
+bottom: 27px;
+left: 88px;
+}
+}
+.example__desc4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align; center;
+    color: #487996;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+@media screen and (min-width: 1444px) {
+ 
+font-size: 18px;
+position: absolute;
+bottom: 8px;
+left: 40px;
+}
+}
+
+
+
+.process__description {
+
+margin-left: auto;
+margin-right: auto;
+padding-top: 52px;
+
+}
+
+.process__content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 52px; 
+}
+
+.img-align {
+    display: block;
+    align-content: space-around;
+    float: left;
+    margin-right: 20px;
+}
+
+.strong {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
@@ -53,96 +314,31 @@
     text-transform: uppercase;
     
     }
-    .threedprint {
-    font-weight: 300;
-    size: 16px;
+    @media screen and (min-width: 1444px) { 
+        font-size: 18px;  
     line-height: 1.25;
-    color: #2b2b2b;
-    padding-left: 20px;
-    }
-    .order-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 16px 32px;
-    margin-left: 20px;
-    width: 280px;
-    background-color: #f5f5f5;
-    box-shadow: -10px 10px 20px #fff, 10px 10px 20px
-    rgba(72, 121, 150, 0.10), 5px 5px 10px rgba(72, 121, 150, 0.1),
-    5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #fff;
-    border-radius: 30px;
-    font-size: 16px;
-    text-transform: uppercase;
-    }
-    .threedmodelling {
-        padding-top: 52px;
-        margin-left: auto;
-        margin-right: auto;
-       
-    }
-    
-    .threed__scanning {
-        padding-top: 52px;
-        margin-left: auto;
-        margin-right: auto; 
-    }
-
   
-
-    .example__picture-list {
-        flex-wrap: nowrap;
-        list-style: none;
-        align-items: flex-start;
-        margin-left: -12px;
-        padding-left: 0;
-        
     }
-    .example__picture-item {
-        flex-basis: calc((100% - 48px) / 4);
-        margin-top: 24px;
-        margin-left: 12px; 
-    }
- 
-
- @media screen and (min-width: 1444px) {
+}
+.threedmodelling {
+    padding-top: 52px;
+    margin-left: auto;
+    margin-right: auto;
    
-    .we__create-text {
-        font-size: 48px;
-    }
-    .example__picture-list {
-    flex-wrap: nowrap;
-        list-style: none;
-        align-items: flex-start;
-        margin-left: -21px;
-        padding-left: 0;
-    }
-    .example__picture-item {
-        flex-basis: calc((100% - 84px) / 4);
-        margin-top: 24px;
-        margin-left: 21px; 
-    }
-    .process__description {
-        padding-top: 100px;
-    }
-    .strong {
-        font-size: 18px;
-    }
-    .threedprint {
-        font-size: 18px;
-    }
-    .order-btn {
-        margin-top: 52px;
-    }
-    .threedmodelling {
-        padding-top: 100px;
-    }
-    .threed__scanning {
-        padding-top: 100px;
-    }
-    .img-align {
-        display: block;
-        align-content: space-around;
-        float: left;
-    }
- }
+}
+.threedmodelling {
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+@media screen and (min-width: 1444px) { 
+    padding-top: 200px;
+     
+}
+
+
+
+.last-text {
+    margin-bottom: 50px;
+}
