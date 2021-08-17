@@ -11,6 +11,10 @@
   height: 42px;
   margin-bottom: 19px;
 }
+.footer__logo-img{
+  width: 192px;
+  height: 48px;
+}
 .footer__text {
   font-style: normal;
   font-weight: 400;
@@ -96,8 +100,11 @@
     margin: 0;
   }
   .footer__logo {
-    margin-right: 136px;
+    margin-left: 0;
+    margin-top: 0;
     margin-bottom: 0;
+    margin-right: 136px;
+    
   }
   .footer__contacts {
     text-align: left;
