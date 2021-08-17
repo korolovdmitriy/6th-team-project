@@ -1,0 +1,14 @@
+.order-page-gallery {
+  display: none;
+
+  @media screen and (min-width: 1444px) {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    display: block;
+    // margin: 0 auto;
+    width: 438px;
+    height: 294px;
+    background-image: url(../images/desctop/take-order/take-order-5.jpg);
+  }
+}
