@@ -1,30 +1,226 @@
-.more-photo__title{
-    font-family: var(--font-bolt);
-    font-size: 24px;
-    line-height: 30px;
-    color: #487996;
+    .more-photo{
+        padding-bottom: 84px;
+    }
+    
+    .more-photo__title{
+        font-family: var(--font-bolt);
+        font-size: 24px;
+        line-height: 1.25;
+        color: #487996;
     
     }
     
     .photo-thumb{
         margin-top: 16px;
         
-    }
-    
-    .more-photo__load-icon{
-    
-        margin-top: 32px;    
-    }
-    
+    }    
+       
     .more-photo__load-icon{
         display: flex;
         justify-content: center;
     }
-    
+
+    .photo-thumb:hover {
+            opacity: 0.7;        
+    }
+
+    .more-photo__load-icon{
+        margin-top: 40px;       
+    }
+
+    #overlay {
+        position: fixed; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 100vw; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(43, 43, 43, 0.8);
+        backdrop-filter: blur(4px); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+      }
+
+      .thumb__modal{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 1168px;
+        transform: translate(-50%, -50%);
+      }
+
+      .img-modal{
+        width: 236px;
+      }
+
+      .svg-left{
+        width: 6px;
+        height: 10px;
+        margin-right: 12px;
+      }
+
+      .svg-right{
+        width: 6px;
+        height: 10px;
+        margin-left: 12px;
+      }
+
+
+      
+
     @media screen and (max-width: 767px) {
         .photo-thumb-tablet{
             display: none;
-        }
+        }       
     }
+
+    @media screen and (min-width: 768px) {
+
+        .more-photo{
+            padding-bottom: 60px;
+        }
+
+        .more-photo__thumb{
+            padding-left: 60px;      
+        }
+
+        .photo-container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .more-photo__title{
+            font-size: 36px;
+        }
+
+        .photo-thumb{
+            margin-top: 32px;            
+        }
+
+        .img-1{
+            width: 247px;
+        }
+
+        .photo-thumb{
+            margin-top: 20px;       
+        
+                &:not(:nth-child(3n)){
+                    margin-right: 20px;
+                }
+        }
+
+        .thumb__modal{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        
+        }
+
+        .img-modal-thumb{
+            width: 554px;
+            height: 369px;
+        }
+
+        .img-modal{
+            width: 100%;
+            height: 100%;
+        }
+
+        .svg-left{
+            width: 14px;
+            height: 25px;
+            margin-right: 12px;
+        }
+  
+        .svg-right{
+            width: 14px;
+            height: 25px;
+            margin-left: 12px;
+        }
+  
+
+    }
+
+    @media screen and (min-width: 1444px) {
+        .more-photo{
+            padding-bottom: 108px;
+        }
+
+        .more-photo__thumb{
+            padding-left: 189px;      
+        }
+
+        .more-photo__title{
+            font-size: 48px;
+        }
+        
+        .photo-container{
+            margin-top: 52px;            
+        }
+
+        .photo-thumb{
+            margin-top: 32px;       
+        
+                &:not(:nth-child(3n)) {
+                    margin-right: 32px;
+                }
+        }
+
+        .img-1{
+            width: 406px;
+        }
+
+        .img-3{
+            width: 214px;
+        }
+
+        .more-photo__load-icon{
+            margin-top: 64px;       
+        }
+
+        .photo-thumb{
+            margin-top: 20px;       
+        
+                &:not(:nth-child(3n)){
+                    margin-right: 20px;
+                }
+        }
+
+        .thumb__modal{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        
+        }
+
+        .img-modal-thumb{
+            width: 906px;
+            height: 605px;
+        }
+
+        .img-modal{
+            width: 100%;
+            height: 100%;
+        }
+
+        .svg-left{
+            width: 23px;
+            height: 40px;
+            margin-right: 47px;
+        }
+  
+        .svg-right{
+            width: 23px;
+            height: 40px;
+            margin-left: 47px;
+        }
+  
+
+    }
+
     
     
