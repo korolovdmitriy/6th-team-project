@@ -92,6 +92,13 @@ color: #2B2B2B;
       max-width: 241px;
       height: 172px;
       margin-right: 0;
+
+      position: absolute;
+      top: 300px;
+      right: 0;
+      width: 240px;
+      z-index: 1;
+      margin: 0;
       background-image: url(../images/tablet/3d-scanning/3d-scanning-1.png);
   }
   @media screen and (min-width: 1440px) {
@@ -99,6 +106,10 @@ color: #2B2B2B;
     height: 368px;
     margin-top: 0;
     margin-bottom: 0;
+
+    position: inherit;
+    width: auto;
+
     background-image: url(../images/desctop/3d-scanning/3d-scanning-1.png);
-  }
+      }
 }
