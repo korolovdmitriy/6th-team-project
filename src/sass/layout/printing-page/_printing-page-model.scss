@@ -1,342 +1,288 @@
-//     .model__examples {
 
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-
-// .example__picture-list {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     align-items: flex-start;
-//     margin-top: -16px;
-//     margin-bottom: -16px;
-//     margin-right: -15px;
-//     padding: 0;
-//     list-style: none;
-
-//     @media screen and (min-width: 1444px){
-//     flex-wrap: nowrap;
-//   }
-// }
-
-// .example__picture-item {
-//     flex-basis: calc((100% - 8px) / 2);
-//     margin-top: 16px;
-
-//     @media screen and (min-width: 1444px){
-//     flex-basis: calc((100% - 84px) / 4);
-//     margin-top: 24px;
-//     }
-// }
-
-// .example__picture-block {
-//     width: 133px;
-//     height: 158px;
-//     position: relative;
-//     background: #fff;
-//     opacity: 0.8;
-//     box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
-//     border-radius: 50px 0px;
-// }
-
-// @media screen and (min-width: 1444px) {
-
-// .example__picture-block {
-// width: 250px;
-// height: 298px;
-// position: relative;
-// }
-// }
-
-// .example__picture-block::after {
-//     content: url"(../src/images/3d-printing-1.png)";
-//     position: absolute;
-//     width: 92px;
-//     height: 76px;
-//     top: 26px;
-//     left: 18px;
-
-//     background-size: 133px 158px;
-// }
-
-// @media screen and (min-width: 1444px) {
-// .example__picture-block::after {
-// content: url"(../src/images/desctop/3d-printing/3d-printing-1.png)";
-// position: absolute;
-// width: 174px;
-// height: 142px;
-// top: 100px;
-// left: 70px;
-// }
-// }
-
-// .example__picture-block2 {
-//     width: 133px;
-//     height: 158px;
-//     position: relative;
-//     background: #fff;
-//     opacity: 0.8;
-//     box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
-//     border-radius: 50px 0px;
-// }
-
-// .example__picture-block2::after {
-//     content: url(../images/3d-printing-2.jpg);
-//     position: absolute;
-//     width: 92px;
-//     height: 76px;
-//     top: 38px;
-//     left: 18px;
-
-//     background-size: 133px 158px;
-// }
-
-// @media screen and (min-width: 1444px) {
-// .example__picture-block2 {
-// width: 250px;
-// height: 298px;
-// position: relative;
-// background: #fff;
-// opacity: 0.8;
-// box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
-// border-radius: 50px 0px;
-// }
-
-// .example__picture-block2::after {
-// content: url"(../src/images/3d-printing/3d-printing-2.png)";
-// position: absolute;
-// width: 194px;
-// height: 120px;
-// top: 110px;
-// left: 70px;
-// }
-
-// .example__picture-block3 {
-//     width: 133px;
-//     height: 158px;
-//     position: relative;
-//     background: #fff;
-//     opacity: 0.8;
-//     box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
-//     border-radius: 50px 0px;
-// }
-
-// .example__picture-block3::after {
-//     content: url"(../src/images/3d-printing-3.jpg)";
-//     position: absolute;
-//     width: 92px;
-//     height: 76px;
-//     top: 31px;
-//     left: 44px;
-
-//     background-size: 133px 158px;
-// }
-
-// @media screen and (min-width: 1444px) {
-// .example__picture-block3 {
-// width: 250px;
-// height: 298px;
-// position: relative;
-// background: #fff;
-// opacity: 0.8;
-// box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
-// border-radius: 50px 0px;
-// }
-// }
-
-// .example__picture-block3::after {
-// content: url"(../src/images/3d-printing/3d-printing-3.png)";
-// position: absolute;
-// width: 83px;
-// height: 133px;
-// top: 100px;
-// left: 90px;
-// }
-
-// .example__picture-block4 {
-//     width: 133px;
-//     height: 158px;
-//     position: relative;
-//     background: #fff;
-//     opacity: 0.8;
-//     box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
-//     border-radius: 50px 0px;
-// }
-
-// .example__picture-block4::after {
-//     content: url"(../src/images/3d-printing-4.jpg)";
-//     position: absolute;
-//     width: 92px;
-//     height: 76px;
-//     top: 24px;
-//     left: 24px;
-
-//     background-size: 133px 158px;
-// }
-
-// @media screen and (min-width: 1444px) {
-// .example__picture-block4 {
-// width: 250px;
-// height: 298px;
-// position: relative;
-// background: #fff;
-// opacity: 0.8;
-// box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
-// border-radius: 50px 0px;
-// }
-// }
-
-// .example__picture-block4::after {
-// content: url"(../src/images/3d-printing/3d-printing-4.png)";
-// position: absolute;
-// width: 161px;
-// height: 161px;
-// top: 90px;
-// left: 70px;
-// }
-
-// .example__desc {
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 14px;
-//     line-height: 1.28;
-//     text-align; center;
-//     color: #487996;
-//     position: absolute;
-//     bottom: 27px;
-//     left: 20px;
-//     padding: 0;
-//     margin: 0;
-//     align-items: center;
-
-//     @media screen and (min-width: 1444px) {
-//         font-size: 18px;
-//         left: 60px;
-//     }
-// }
-
-// .example__desc2 {
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 14px;
-//     line-height: 1.28;
-//     text-align; center;
-//     color: #487996;
-//     position: absolute;
-//     bottom: 27px;
-//     left: 34px;
-//     padding: 0;
-//     margin: 0;
-//     align-items: center;
-// }
-// @media screen and (min-width: 1444px) {
-
-// font-size: 18px;
-// line-height: 1.28;
-// position: absolute;
-// bottom: 27px;
-// left: 80px;
-// }
-// }
-
-// .example__desc3 {
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 14px;
-//     line-height: 1.28;
-//     text-align; center;
-//     color: #487996;
-//     position: absolute;
-//     bottom: 27px;
-//     left: 42px;
-//     padding: 0;
-//     margin: 0;
-//     align-items: center;
-// }
-// @media screen and (min-width: 1444px) {
-
-// font-size: 18px;
-// position: absolute;
-// bottom: 27px;
-// left: 88px;
-// }
-// }
-// .example__desc4 {
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 14px;
-//     line-height: 1.28;
-//     text-align; center;
-//     color: #487996;
-//     position: absolute;
-//     bottom: 8px;
-//     left: 8px;
-//     padding: 0;
-//     margin: 0;
-//     align-items: center;
-// }
-// @media screen and (min-width: 1444px) {
-
-// font-size: 18px;
-// position: absolute;
-// bottom: 8px;
-// left: 40px;
-// }
-// }
-
-// .process__description {
-
-// margin-left: auto;
-// margin-right: auto;
-// padding-top: 52px;
-
-// }
-
-// .process__content {
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding-top: 52px;
-// }
-
-// .img-align {
-//     display: block;
-//     align-content: space-around;
-//     float: left;
-//     margin-right: 20px;
-// }
-
-// .strong {
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.25;
-//     color: #487996;
-//     text-transform: uppercase;
-
-//     }
-//     @media screen and (min-width: 1444px) {
-//         font-size: 18px;
-//     line-height: 1.25;
-
-//     }
-// }
-// .threedmodelling {
-//     padding-top: 52px;
-//     margin-left: auto;
-//     margin-right: auto;
-
-// }
-// .threedmodelling {
-//     padding-top: 200px;
-//     margin-left: auto;
-//     margin-right: auto;
-
-// }
-// @media screen and (min-width: 1444px) {
-//     padding-top: 200px;
-
-// }
-
-// .last-text {
-//     margin-bottom: 50px;
-// }
+.backround-view {
+    position: relative;
+    background-image: url(../images/desctop/decor-desctop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .examples {
+      padding-top: 24px;
+    }
+    
+    .printing-page {
+      padding-top: 52px;
+      padding-bottom: 92px;
+    
+      @media screen and (min-width: 768px) {
+        padding-bottom: 153px;
+      }
+    
+      @media screen and (min-width: 1444px) {
+        padding-top: 100px;
+        padding-bottom: 214px;
+      }
+    }
+    
+    .example__picture-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: -16px;
+      margin-left: -14px;
+    
+      @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        margin-left: -12px;
+      }
+    
+      @media screen and (min-width: 1444px) {
+        margin-left: -21px;
+      }
+    }
+    
+    .example__picture-item {
+      flex-basis: calc((100% - 28px) / 2);
+      margin-top: 16px;
+      margin-left: 14px;
+    
+      @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 48px) / 4);
+        margin-left: 12px;
+      }
+      @media screen and (min-width: 1444px) {
+        flex-basis: calc((100% - 84px) / 4);
+        margin-left: 21px;
+      }
+    }
+    
+    .example__picture-block {
+      display: block;
+      padding-top: 118px;
+      width: 133px;
+      height: 158px;
+      position: relative;
+      background: #fff;
+      opacity: 0.8;
+      box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+      border-radius: 50px 0px;
+    
+      @media screen and (min-width: 768px) {
+        padding-top: 136px;
+        width: 152px;
+        height: 181px;
+      }
+    
+      @media screen and (min-width: 1444px) {
+        padding-top: 235px;
+        width: 250px;
+        height: 298px;
+      }
+    }
+    
+    .example__picture1::after {
+      content: '';
+      position: absolute;
+      width: 92px;
+      height: 76px;
+      top: 26px;
+      left: 18px;
+      background-image: url(../images/mobile/3d-printing/3d-printing-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+      @media screen and (min-width: 768px) {
+        background-image: url(../images/tablet/3d-printing/3d-printing-1.png);
+        position: absolute;
+        width: 106px;
+        height: 86px;
+        top: 30px;
+        left: 19px;
+      }
+    
+      @media screen and (min-width: 1444px) {
+        background-image: url(../images/desctop/3d-printing/3d-printing-1.png);
+        position: absolute;
+        width: 174px;
+        height: 142px;
+        top: 56px;
+        left: 32px;
+      }
+    }
+    
+    .example__picture2::after {
+      content: '';
+      position: absolute;
+      width: 102px;
+      height: 64px;
+      top: 33px;
+      left: 17px;
+      background-image: url(../images/mobile/3d-printing/3d-printing-2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+      @media screen and (min-width: 768px) {
+        background-image: url(../images/tablet/3d-printing/3d-printing-2.png);
+        position: absolute;
+        width: 118px;
+        height: 73px;
+        top: 44px;
+        left: 20px;
+      }
+    
+      @media screen and (min-width: 1444px) {
+        background-image: url(../images/desctop/3d-printing/3d-printing-2.png);
+        position: absolute;
+        width: 194px;
+        height: 120px;
+        top: 77px;
+        left: 33px;
+      }
+    }
+    
+    .example__picture3::after {
+      content: '';
+      position: absolute;
+      width: 44px;
+      height: 70px;
+      top: 31px;
+      left: 44px;
+      background-image: url(../images/mobile/3d-printing/3d-printing-3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+      @media screen and (min-width: 768px) {
+        background-image: url(../images/tablet/3d-printing/3d-printing-3.png);
+        position: absolute;
+        width: 50px;
+        height: 81px;
+        top: 36px;
+        left: 51px;
+      }
+    
+      @media screen and (min-width: 1444px) {
+        background-image: url(../images/desctop/3d-printing/3d-printing-3.png);
+        position: absolute;
+        width: 83px;
+        height: 133px;
+        top: 64px;
+        left: 84px;
+      }
+    }
+    
+    .example__picture4::after {
+      content: '';
+      position: absolute;
+      width: 85px;
+      height: 85px;
+      top: 23px;
+      left: 23px;
+      background-image: url(../images/mobile/3d-printing/3d-printing-4.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+      @media screen and (min-width: 768px) {
+        background-image: url(../images/tablet/3d-printing/3d-printing-4.png);
+        position: absolute;
+        width: 98px;
+        height: 98px;
+        top: 27px;
+        left: 27px;
+      }
+    
+      @media screen and (min-width: 1444px) {
+        background-image: url(../images/desctop/3d-printing/3d-printing-4.png);
+        position: absolute;
+        width: 161px;
+        height: 161px;
+        top: 50px;
+        left: 44px;
+      }
+    }
+    
+    .example__desc {
+      font-size: 14px;
+      line-height: 1.28;
+      text-align: center;
+      color: #487996;
+    
+      @media screen and (min-width: 1444px) {
+        font-size: 18px;
+      }
+    }
+    // Progress
+  
+  .process__content:not(:last-child) {
+      margin-bottom: 68px;
+    
+      @media screen and (min-width: 768px) {
+        margin-bottom: 93px;
+      }
+    
+      @media screen and (min-width: 1444px) {
+        margin-bottom: 167px;
+      }
+    }
+    
+    .img-align {
+      display: block;
+      align-content: space-around;
+      float: left;
+      margin-right: 20px;
+      width: 280px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 250px;
+      }
+      @media screen and (min-width: 1444px) {
+        margin-right: 78px;
+      }
+    }
+    .process__text {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+      @media screen and (min-width: 768px) {
+        
+          margin-bottom: 52px;
+        }
+      }
+    .strong {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.25;
+      color: #487996;
+      text-transform: uppercase;
+    
+      @media screen and (min-width: 1444px) {
+        font-size: 18px;
+        line-height: 1.25;
+      }
+    }
+    
+    .threedmodelling {
+      padding-top: 52px;
+      margin-left: auto;
+      margin-right: auto;
+    
+      @media screen and (min-width: 1444px) {
+        padding-top: 200px;
+      }
+    }
+    
+    .threed__scanning {
+      padding-top: 52px;
+      margin-left: auto;
+      margin-right: auto;
+    
+      @media screen and (min-width: 1444px) {
+        padding-top: 200px;
+      }
+    }
+    
+    .process__desc {
+      margin-bottom: 68px;
+    }
