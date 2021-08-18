@@ -160,9 +160,55 @@
   }
 }
 
-section__order-form {
+.section__order-form {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 auto;
+  flex-direction: column;
+
+  @media screen and (min-width: 1444px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+}
+
+// CONTACTS
+.order-contacts {
+  @media screen and (min-width: 1444px) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.order-contacts__list {
+  margin-bottom: 76px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1444px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+// GALLERY
+.order-page-gallery {
+  display: none;
+
+  @media screen and (min-width: 1444px) {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    display: block;
+    // margin: 0 auto;
+    width: 438px;
+    height: 294px;
+    background-image: url(../images/desctop/take-order/take-order-5.jpg);
+  }
 }
