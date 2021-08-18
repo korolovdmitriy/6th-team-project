@@ -30,7 +30,6 @@
 .hero__list {
   display: flex;
   justify-content: center;
-  box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.3));
 
   @media screen and (min-width: 768px) {
     max-width: 380px;
@@ -43,6 +42,7 @@
 }
 
 .hero__item {
+  box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.3));
   margin-right: 15px;
   @media screen and (min-width: 768px) {
     margin-right: 20px;
@@ -113,40 +113,79 @@
 
 @media screen and (min-width: 768px) {
   .background__left-top {
-    background-image: url(./src/images/tablet/main-tablet/main-1.jpg);
+    background-image: url(/src/images/tablet/main-tablet/main-1.jpg);
     position: absolute;
+    border-radius: 100px;
+    background-position: left 76px top -5px;
+    // left: ;
+    // bottom: ;
+  }
+
+  .background__right-top {
+    background-image: url(/src/images/tablet/main-tablet/main-2.jpg);
+    position: absolute;
+    border-radius: 0px 0px 72px 0px;
+    background-position: right 0 top -5px;
+    // left: ;
+    // bottom: ;
+  }
+
+  .background__left-bottom {
+    background-image: url(/src/images/tablet/main-tablet/main-3.jpg);
+    position: absolute;
+    border-radius: 100px;
+    background-position: right 0 bottom 76px;
+    // left: ;
+    // bottom: ;
+  }
+
+  .background__right-bottom {
+    background-image: url(/src/images/tablet/main-tablet/main-4.jpg);
+    position: absolute;
+    border-radius: 72px 72px 0px 0px;
+    background-position: left 0 bottom 0;
     // left: ;
     // bottom: ;
   }
 }
 
-//   .hero {
-//     padding-top: 38px;
+@media screen and (min-width: 1444px) {
+  .background__left-top {
+    background-image: url(/src/images/desctop/main/main-1.jpg);
+    position: absolute;
+    border-radius: 100px;
+    background-position: left 144px top -10px;
+    // left: 76px;
+    // bottom: -5px;
+  }
 
-//     background-image: url(../src/images/tablet/main-tablet/main-1.jpg),
-//       url(../src/images/tablet/main-tablet/main-2.jpg),
-//       url(../src/images/tablet/main-tablet/main-3.jpg),
-//       url(../src/images/tablet/main-tablet/main-4.jpg);
+  .background__right-top {
+    background-image: url(/src/images/desctop/main/main-2.jpg);
+    position: absolute;
+    border-radius: 0px 0px 72px 0px;
+    background-position: right 0 top -10px;
+    // left: ;
+    // bottom: ;
+  }
 
-//     background-position: 144px top, right top, left bottom, right bottom;
-//     background-repeat: no-repeat;
+  .background__left-bottom {
+    background-image: url(/src/images/desctop/main/main-3.jpg);
+    position: absolute;
+    border-radius: 100px;
+    background-position: right 0 bottom 144px;
+    // left: ;
+    // bottom: ;
+  }
 
-//     background-size: 73px 73px;
-//   }
-// }
-
-// @media screen and (min-width: 1444px) {
-//   .hero {
-//     background-color: #ffff;
-//     background-image: url(../src/images/desctop/main/main-1.jpg),
-//       url(../src/images/desctop/main/main-2.jpg), url(../src/images/desctop/main/main-3.jpg),
-//       url(../src/images/desctop/main/main-4.jpg);
-
-//     background-position: 144px top, right top, left bottom, right bottom;
-//     background-repeat: no-repeat;
-//     background-size: 144px 144px;
-//   }
-// }
+  .background__right-bottom {
+    background-image: url(/src/images/desctop/main/main-4.jpg);
+    position: absolute;
+    border-radius: 72px 72px 0px 0px;
+    background-position: left 0 bottom 0;
+    // left: ;
+    // bottom: ;
+  }
+}
 
 .hero-container {
   width: 100%;
