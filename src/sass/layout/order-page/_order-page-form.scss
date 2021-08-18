@@ -109,6 +109,7 @@
   left: 0;
 }
 
+// MESSAGE FIELD
 .order-form__message-input {
   width: 100%;
   height: 200px;
@@ -132,7 +133,18 @@
   border: 1px solid #008cef;
 }
 
-.order-form__add-file-text {
+// ADD FILE
+.form-add-file__wrapper {
+  position: relative;
+}
+
+.form-add-file__icon {
+  position: absolute;
+  top: -32px;
+  right: 20;
+}
+
+.form-add-file__text {
   max-width: 220px;
   margin-bottom: 24px;
 
@@ -147,6 +159,10 @@
   @media screen and (min-width: 1444px) {
     max-width: 516px;
   }
+}
+
+.form-add-file__input {
+  display: none;
 }
 
 .order-form-btn {
@@ -202,11 +218,8 @@
   display: none;
 
   @media screen and (min-width: 1444px) {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
     display: block;
-    // margin: 0 auto;
+
     width: 438px;
     height: 294px;
     background-image: url(../images/desctop/take-order/take-order-5.jpg);
