@@ -223,6 +223,8 @@
 }
 @media screen and (max-width: 768px) {
   .lang-change {
+    display: flex;
+    align-items: center;
     margin: 0;
     font-size: 14px;
     line-height: 1.3;
@@ -288,18 +290,119 @@
   }
 }
 
+.mobile-menu__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 20px;
+  padding-right: 22px;
+}
+.close-btn {
+  fill: #487996;
+  position: absolute;
+  background-color: inherit;
+  border: none;
+  width: 45px;
+  height: 45px;
+  right: 50%;
+  top: -40px;
+  transform: translate(50%, -50%);
+  &__icon {
+    width: 23px;
+    height: 23px;
+  }
+  &:hover,
+  &:focus {
+    fill: #008cef;
+  }
+}
 .mobile-menu {
+  // padding-top: 30px;
+  // padding-bottom: 32px;
+  width: 100vw;
+  height: 100vh;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  position: fixed;
+  position: absolute;
   z-index: 100;
   left: 0;
-  top: 0;
+  top: 80px;
 
-  &.is-open {
+  &.is-burger-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
+}
+// .mobile-navigation {
+//   width: 100vw;
+//   height: 100vh;
+// }
+.some-class {
+  visibility: hidden;
+}
+.hide {
+  visibility: hidden;
+}
+
+.mobile-navigation {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+}
+.mobile-navigation__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-navigation__item {
+}
+.mobile-navigation__link {
+  margin-bottom: 24px;
+  color: #487996;
+  font-weight: 700;
+  font-size: 24px;
+  white-space: nowrap;
+  &--submenu {
+    font-weight: 500;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background: #487996;
+      border-radius: 3px 0;
+      margin-right: 10px;
+      align-items: center;
+    }
+  }
+  &--main {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #487996;
+  }
+}
+
+.mobile-navigation__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mobile-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-submenu__item:not(:last-child) {
+  margin-bottom: 24px;
 }

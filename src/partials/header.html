@@ -29,7 +29,7 @@
       </ul>
       
     </nav>
-    <button class="burger-btn" data-menu-open>
+    <button class="burger-btn" data-menu-open >
       <svg class="burger-btn__icon" width="32" height="18">
         <use href="/images/sprite.svg#icon-burger"></use>
       </svg>
@@ -62,11 +62,27 @@
   </div>
 
   <div class="mobile-menu" data-menu>
-    <div class="mobile-menu__container">
-      <button class="close-btn">
+    <div class="mobile-menu__container" data-container>
+      <button class="close-btn" data-menu-close>
         <svg class="close-btn__icon">
-          <use href=""></use>
+          <use href="/images/sprite.svg#icon-blue-cross"></use>
         </svg>
       </button>
+      <nav class="mobile-navigation" >
+        <ul class="mobile-navigation__list">
+          <li class="mobile-navigation__item"><a href='' class="mobile-navigation__link mobile-navigation__link--main">ГОЛОВНА</a></li>
+          <li class="mobile-navigation__item mobile-box"><a href='' class="mobile-navigation__link ">ПОСЛУГИ</a>
+            <ul class="mobile-submenu">
+              <li class="mobile-submenu__item"><a href='' class="mobile-navigation__link mobile-navigation__link--submenu">3D Моделювання</a></li>
+              <li class="mobile-submenu__item"><a href='' class="mobile-navigation__link mobile-navigation__link--submenu">3D Сканування</a></li>
+              <li class="mobile-submenu__item"><a href='' class="mobile-navigation__link mobile-navigation__link--submenu">3D Друк</a></li>
+            </ul>
+          </li>
+          <li class="mobile-navigation__item"><a href='' class="mobile-navigation__link">ЗАМОВИТИ</a></li>
+          <li class="mobile-navigation__item"><a href='' class="mobile-navigation__link">КОНТАКТИ</a></li>
+        </ul>
+      </nav>
     </div>
+
   </div>
+</header>
