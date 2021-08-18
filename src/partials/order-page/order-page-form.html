@@ -1,61 +1,76 @@
-    <div class="section container">
-        <div class="section__order-form">
-            <!-- FORM -->
-            <form class="order-form" autocomplete="off">
-                <h3 class="section-title section-title--margin-bottom section-title--center">Зв'яжіться з нами</h3>
-                <div class="order-form__field">
-                    <input class="order-form__input" type="text" name="username" id="name" placeholder=" " />
-                    <label class="order-form__label" for="name">Ім'я</label>
-                </div>
-                <div class="order-form__field">
-                    <input class="order-form__input" type="email" name="email" id="email" placeholder=" " />
-                    <label class="order-form__label" for="email">Email</label>
-                </div>
-                <div class="order-form__select-wrap">
-                    <select class="order-form__input order-form__select" name="plastic-type">
-                        <option class="order-form__select-plastic" selected>Види пластика</option>
-                        <option value="1">ABS</option>
-                        <option value="2">PLA</option>
-                        <option value="3">TPU</option>
-                        <option value="4">PETG</option>
-                        <option value="5">HIPS</option>
-                    </select>
-                </div>
-                <div class="order-form__select-wrap">
-                    <select class="order-form__input order-form__select" name="quality">
-                        <option selected>Якість друку</option>
-                        <option value="300">300 мікрон</option>
-                        <option value="200">200 мікрон</option>
-                        <option value="100">100 мікрон</option>
-                        <option value="none">Труднощі у виборі - ми допоможемо</option>
-                    </select>
-                </div>
-                <div class="order-form__select-wrap">
-                    <select class="order-form__input order-form__select" name="color">
-                        <option selected>Колір</option>
-                    </select>
-                </div>
-            
-                <label class="order-form__message">
-                    Повідомлення
-                    <textarea class="order-form__message-input" name="message" placeholder="Залишіть своє повідомлення"></textarea>
-                   
-                </label>
-                <label for="file" class="order-form__add-file-text">
-                    *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-                </label>
-                <input type="file" name="add-file" id="file">                           
-                <button class="button-order order-form-btn" type="submit">Відправити</button>
-            </form>
+<div class="section container">
+  <div class="section__order-form">
+    <!-- FORM -->
+    <form class="order-form" autocomplete="off">
+      <h3 class="section-title section-title--margin-bottom section-title--center">
+        Зв'яжіться з нами
+      </h3>
+      <div class="order-form__field">
+        <input
+          class="order-form__input"
+          type="text"
+          name="username"
+          id="name"
+          placeholder=" "
+          minlength="3"
+          pattern="[a-zA-Zа-яёА-ЯЁ]+"
+          title="Ім'я може містити тільки символи кириллиці або латиниці і пробіли"
+          required
+        />
+        <label class="order-form__label" for="name">Ім'я</label>
+      </div>
+      <div class="order-form__field">
+        <input class="order-form__input" type="email" name="email" id="email" placeholder=" " required/>
+        <label class="order-form__label" for="email">Email</label>
+      </div>
+      <div class="order-form__select-wrap">
+        <select class="order-form__input order-form__select" name="plastic-type">
+          <option class="order-form__select-plastic" selected>Види пластика</option>
+          <option value="1">ABS</option>
+          <option value="2">PLA</option>
+          <option value="3">TPU</option>
+          <option value="4">PETG</option>
+          <option value="5">HIPS</option>
+        </select>
+      </div>
+      <div class="order-form__select-wrap">
+        <select class="order-form__input order-form__select" name="quality">
+          <option selected>Якість друку</option>
+          <option value="300">300 мікрон</option>
+          <option value="200">200 мікрон</option>
+          <option value="100">100 мікрон</option>
+          <option value="none">Труднощі у виборі - ми допоможемо</option>
+        </select>
+      </div>
+      <div class="order-form__select-wrap">
+        <select class="order-form__input order-form__select" name="color">
+          <option selected>Колір</option>
+        </select>
+      </div>
 
-            <!-- CONTACTS -->
-            <address class="order-contacts">
-                <ul class="order-contacts__list">
-                    <li class="order-contacts__item">Телефони</li>
-                    <li class="order-contacts__item">Email</li>
-                    <li class="order-contacts__item">Робочий час</li>                    
-                </ul>
-                <div class="order-page-gallery"></div>
-            </address>
-        </div>
-    </div>
+      <label class="order-form__message">
+        Повідомлення
+        <textarea
+          class="order-form__message-input"
+          name="message"
+          placeholder="Залишіть своє повідомлення"
+        ></textarea>
+      </label>
+      <label for="file" class="order-form__add-file-text">
+        *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+      </label>
+      <input type="file" name="add-file" id="file" />
+      <button class="button-order order-form-btn" type="submit">Відправити</button>
+    </form>
+
+    <!-- CONTACTS -->
+    <address class="order-contacts">
+      <ul class="order-contacts__list">
+        <li class="order-contacts__item">Телефони</li>
+        <li class="order-contacts__item">Email</li>
+        <li class="order-contacts__item">Робочий час</li>
+      </ul>
+      <div class="order-page-gallery"></div>
+    </address>
+  </div>
+</div>
