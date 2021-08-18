@@ -14,25 +14,39 @@
     padding: 0;
     list-style: none;
 }
-@media screen and (min-width: 1444px){
 
+@media screen and (min-width: 768px){
+    .example__picture-list {
+        
+        flex-wrap: nowrap;     
+    }
+
+
+@media screen and (min-width: 1444px){
+    .example__picture-list {
     flex-wrap: nowrap;
   
 }
-
+}
 
 .example__picture-item {
     flex-basis: calc((100% - 8px) / 2);
     margin-top: 16px;   
-}  
+} 
+@media screen and (min-width: 768px){
+    .example__picture-item {
+        flex-basis: calc((100% - 48px) / 4);
+        margin-top: 24px;
+        margin-left: 12px; 
+    }
 @media screen and (min-width: 1444px){
-
+    .example__picture-item {
     flex-basis: calc((100% - 84px) / 4);
     margin-top: 24px;
     
     
 }
-
+}
 .example__picture-block {
     width: 133px;
     height: 158px;
@@ -41,6 +55,11 @@
     opacity: 0.8;
     box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
     border-radius: 50px 0px;
+}
+@media screen and (min-width: 768px){
+    .example__picture-block {
+    width: 152px;
+    height: 180px;
 }
 
 @media screen and (min-width: 1444px) {
@@ -51,8 +70,9 @@ height: 298px;
 position: relative;
 }
 }
+
 .example__picture-block::after {
-    content: url"(../src/images/3d-printing-1.png)";
+    content: url"(../src/images/mobile/3d-printing/3d-printing-1.png)";
     position: absolute;
     width: 92px;
     height: 76px;
@@ -61,7 +81,15 @@ position: relative;
      
     background-size: 133px 158px;
 }
-
+@media screen and(min-width: 768px) {
+.example__picture-block::after {
+    content: url"(../src/images/tablet/3d-printing/3d-printing-1.png)";
+    position: absolute;
+    width: 92px;
+    height: 76px;
+    top: 26px;
+    left: 18px;
+}
 @media screen and (min-width: 1444px) {
 .example__picture-block::after {
 content: url"(../src/images/desctop/3d-printing/3d-printing-1.png)";
@@ -82,7 +110,7 @@ left: 70px;
     border-radius: 50px 0px;
 }
 .example__picture-block2::after {
-    content: url(../images/3d-printing-2.jpg);
+    content: url"(../src/images/mobile/3d-printing/3d-printing-2.png)";
     position: absolute;
     width: 92px;
     height: 76px;
@@ -91,6 +119,24 @@ left: 70px;
      
     background-size: 133px 158px;
 }
+@media screen and(min-width: 768px) {
+    .example__picture-block2 {
+        width: 152px;
+        height: 180px;
+        position: relative;
+        background: #fff;
+        opacity: 0.8;
+        box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+        border-radius: 50px 0px;
+    }
+    .example__picture-block2::after {
+        content: url"(../src/images/tablet/3d-printing/3d-printing-2.png)";
+        position: absolute;
+        width: 92px;
+        height: 76px;
+        top: 38px;
+        left: 18px;
+    }  
 @media screen and (min-width: 1444px) {
 .example__picture-block2 {
 width: 250px;
@@ -102,7 +148,7 @@ box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
 border-radius: 50px 0px;
 }
 .example__picture-block2::after {
-content: url"(../src/images/3d-printing/3d-printing-2.png)";
+content: url"(../src/images/desctop/3d-printing/3d-printing-2.png)";
 position: absolute;
 width: 194px;
 height: 120px;
@@ -120,7 +166,7 @@ left: 70px;
     border-radius: 50px 0px;
 }
 .example__picture-block3::after {
-    content: url"(../src/images/3d-printing-3.jpg)";
+    content: url"(../src/images/mobile/3d-printing/3d-printing-3.png)";
     position: absolute;
     width: 92px;
     height: 76px;
@@ -129,7 +175,24 @@ left: 70px;
      
     background-size: 133px 158px;
 }
-
+@media screen and(min-width: 768px) {
+    .example__picture-block3 {
+        width: 152px;
+        height: 180px;
+        position: relative;
+        background: #fff;
+        opacity: 0.8;
+        box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+        border-radius: 50px 0px;
+    }
+    .example__picture-block3::after {
+        content: url"(../src/images/tablet/3d-printing/3d-printing-3.png)";
+        position: absolute;
+        width: 92px;
+        height: 76px;
+        top: 38px;
+        left: 46px;
+    } 
 @media screen and (min-width: 1444px) {
 .example__picture-block3 {
 width: 250px;
@@ -141,7 +204,7 @@ box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
 border-radius: 50px 0px;
 }
 .example__picture-block3::after {
-content: url"(../src/images/3d-printing/3d-printing-3.png)";
+content: url"(../src/images/desctop/3d-printing/3d-printing-3.png)";
 position: absolute;
 width: 83px;
 height: 133px;
@@ -160,7 +223,7 @@ left: 90px;
     border-radius: 50px 0px;
 }
 .example__picture-block4::after {
-    content: url"(../src/images/3d-printing-4.jpg)";
+    content: url"(../src/images/mobile/3d-printing/3d-printing-4.png)";
     position: absolute;
     width: 92px;
     height: 76px;
@@ -169,6 +232,24 @@ left: 90px;
      
     background-size: 133px 158px;
 }
+@media screen and(min-width: 768px) {
+    .example__picture-block4 {
+        width: 152px;
+        height: 180px;
+        position: relative;
+        background: #fff;
+        opacity: 0.8;
+        box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+        border-radius: 50px 0px;
+    }
+    .example__picture-block4::after {
+        content: url"(../src/images/tablet/3d-printing/3d-printing-4.png)";
+        position: absolute;
+        width: 92px;
+        height: 76px;
+        top: 38px;
+        left: 18px;
+    }
 @media screen and (min-width: 1444px) {
 .example__picture-block4 {
 width: 250px;
@@ -180,7 +261,7 @@ box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
 border-radius: 50px 0px;
 }
 .example__picture-block4::after {
-content: url"(../src/images/3d-printing/3d-printing-4.png)";
+content: url"(../src/images//desctop/3d-printing/3d-printing-4.png)";
 position: absolute;
 width: 161px;
 height: 161px;
@@ -194,7 +275,7 @@ left: 70px;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.28;
-    text-align; center;
+  
     color: #487996;
     position: absolute;
     bottom: 27px;
@@ -203,9 +284,20 @@ left: 70px;
     margin: 0;
     align-items: center;
 }
+@media screen and(min-width: 768px) {
+.example__desc {
+    
+    font-size: 14px;
+    line-height: 1.28;
+    
+    color: #487996;
+    position: absolute;
+    bottom: 27px;
+    left: 28px;
+}
 
 @media screen and (min-width: 1444px) {
-
+.example__desc {
 
 font-size: 18px;
 line-height: 1.28;
@@ -220,7 +312,7 @@ left: 60px;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.28;
-    text-align; center;
+    
     color: #487996;
     position: absolute;
     bottom: 27px;
@@ -229,8 +321,19 @@ left: 60px;
     margin: 0;
     align-items: center;
 }
+@media screen and(min-width: 768px) {
+    .example__desc2 {
+        
+        font-size: 14px;
+        line-height: 1.28;
+        
+        color: #487996;
+        position: absolute;
+        bottom: 27px;
+        left: 38px;
+    }
 @media screen and (min-width: 1444px) {
-
+.example__desc2 {
 font-size: 18px;
 line-height: 1.28;
 position: absolute;
@@ -243,7 +346,7 @@ left: 80px;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.28;
-    text-align; center;
+    
     color: #487996;
     position: absolute;
     bottom: 27px;
@@ -252,8 +355,19 @@ left: 80px;
     margin: 0;
     align-items: center;
 }
+@media screen and(min-width: 768px) {
+    .example__desc3 {
+        
+        font-size: 14px;
+        line-height: 1.28;
+        
+        color: #487996;
+        position: absolute;
+        bottom: 27px;
+        left: 46px;
+    }
 @media screen and (min-width: 1444px) {
-
+.example__desc3 {
 font-size: 18px;
 position: absolute;
 bottom: 27px;
@@ -265,7 +379,7 @@ left: 88px;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.28;
-    text-align; center;
+    
     color: #487996;
     position: absolute;
     bottom: 8px;
@@ -274,16 +388,25 @@ left: 88px;
     margin: 0;
     align-items: center;
 }
+@media screen and(min-width: 768px) {
+    .example__desc4 {
+        
+        font-size: 14px;
+        line-height: 1.28;
+        
+        color: #487996;
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+    }
 @media screen and (min-width: 1444px) {
- 
+ .example__desc4 {
 font-size: 18px;
 position: absolute;
 bottom: 8px;
 left: 40px;
 }
 }
-
-
 
 .process__description {
 
@@ -301,10 +424,21 @@ padding-top: 52px;
 
 .img-align {
     display: block;
-    align-content: space-around;
-    float: left;
-    margin-right: 20px;
+   
 }
+@media screen and (min-width: 768px) {
+    .img-align {
+        align-content: space-around;
+    float: left;
+    margin-right: 20px; 
+    }
+    @media screen and (min-width: 1444px) {
+        .img-align {
+            align-content: space-around;
+        float: left;
+        margin-right: 20px; 
+        }
+    }
 
 .strong {
     font-weight: 700;
@@ -314,7 +448,14 @@ padding-top: 52px;
     text-transform: uppercase;
     
     }
+    @media screen and (min-width: 768px) { 
+        .strong {
+        font-size: 16px;  
+    line-height: 1.25;
+  
+    }
     @media screen and (min-width: 1444px) { 
+        .strong {
         font-size: 18px;  
     line-height: 1.25;
   
@@ -326,19 +467,18 @@ padding-top: 52px;
     margin-right: auto;
    
 }
+@media screen and (min-width: 768px) {
 .threedmodelling {
-    padding-top: 200px;
-    margin-left: auto;
-    margin-right: auto;
-   
+    padding-top: 76px;
+
 }
+
 @media screen and (min-width: 1444px) { 
+    .threedmodelling {
     padding-top: 200px;
      
 }
-
-
-
+}
 .last-text {
     margin-bottom: 50px;
 }
