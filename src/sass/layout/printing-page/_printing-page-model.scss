@@ -6,13 +6,32 @@
 //     margin-right: auto;
 // }
 
+.examples {
+  padding-top: 24px;
+}
+
+.printing-page {
+  padding-top: 52px;
+  padding-bottom: 92px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 153px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    padding-top: 100px;
+    padding-bottom: 214px;
+  }
+}
+
 .example__picture-list {
   display: flex;
-  //   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   margin-top: -16px;
   margin-left: -14px;
+
+  //   flex-direction: row;
   //   margin-bottom: -16px;
   //   margin-right: -15px;
   //   padding: 0;
@@ -100,90 +119,90 @@
 .example__picture2::after {
   content: '';
   position: absolute;
-  width: 92px;
-  height: 76px;
-  top: 26px;
-  left: 18px;
-  background-image: url(../images/mobile/3d-printing/3d-printing-1.jpg);
+  width: 102px;
+  height: 64px;
+  top: 33px;
+  left: 17px;
+  background-image: url(../images/mobile/3d-printing/3d-printing-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/tablet/3d-printing/3d-printing-1.png);
+    background-image: url(../images/tablet/3d-printing/3d-printing-2.png);
     position: absolute;
-    width: 106px;
-    height: 86px;
-    top: 30px;
-    left: 19px;
+    width: 118px;
+    height: 73px;
+    top: 44px;
+    left: 20px;
   }
 
   @media screen and (min-width: 1444px) {
-    background-image: url(../images/desctop/3d-printing/3d-printing-1.png);
+    background-image: url(../images/desctop/3d-printing/3d-printing-2.png);
     position: absolute;
-    width: 174px;
-    height: 142px;
-    top: 56px;
-    left: 32px;
+    width: 194px;
+    height: 120px;
+    top: 77px;
+    left: 33px;
   }
 }
 
 .example__picture3::after {
   content: '';
   position: absolute;
-  width: 92px;
-  height: 76px;
-  top: 26px;
-  left: 18px;
-  background-image: url(../images/mobile/3d-printing/3d-printing-1.jpg);
+  width: 44px;
+  height: 70px;
+  top: 31px;
+  left: 44px;
+  background-image: url(../images/mobile/3d-printing/3d-printing-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/tablet/3d-printing/3d-printing-1.png);
+    background-image: url(../images/tablet/3d-printing/3d-printing-3.png);
     position: absolute;
-    width: 106px;
-    height: 86px;
-    top: 30px;
-    left: 19px;
+    width: 50px;
+    height: 81px;
+    top: 36px;
+    left: 51px;
   }
 
   @media screen and (min-width: 1444px) {
-    background-image: url(../images/desctop/3d-printing/3d-printing-1.png);
+    background-image: url(../images/desctop/3d-printing/3d-printing-3.png);
     position: absolute;
-    width: 174px;
-    height: 142px;
-    top: 56px;
-    left: 32px;
+    width: 83px;
+    height: 133px;
+    top: 64px;
+    left: 84px;
   }
 }
 
 .example__picture4::after {
   content: '';
   position: absolute;
-  width: 92px;
-  height: 76px;
-  top: 26px;
-  left: 18px;
-  background-image: url(../images/mobile/3d-printing/3d-printing-1.jpg);
+  width: 85px;
+  height: 85px;
+  top: 23px;
+  left: 23px;
+  background-image: url(../images/mobile/3d-printing/3d-printing-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/tablet/3d-printing/3d-printing-1.png);
+    background-image: url(../images/tablet/3d-printing/3d-printing-4.png);
     position: absolute;
-    width: 106px;
-    height: 86px;
-    top: 30px;
-    left: 19px;
+    width: 98px;
+    height: 98px;
+    top: 27px;
+    left: 27px;
   }
 
   @media screen and (min-width: 1444px) {
-    background-image: url(../images/desctop/3d-printing/3d-printing-1.png);
+    background-image: url(../images/desctop/3d-printing/3d-printing-4.png);
     position: absolute;
-    width: 174px;
-    height: 142px;
-    top: 56px;
-    left: 32px;
+    width: 161px;
+    height: 161px;
+    top: 50px;
+    left: 44px;
   }
 }
 
@@ -393,16 +412,26 @@
 // }
 // }
 
-.process__description {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  padding-top: 52px;
-}
+// .process__description {
+//   //   margin-left: auto;
+//   //   margin-right: auto;
+//   //   padding-top: 52px;
+// }
 
-.process__content {
+.process__content:not(:last-child) {
+  margin-bottom: 68px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 93px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    margin-bottom: 167px;
+  }
   //   margin-left: auto;
   //   margin-right: auto;
-  padding-top: 52px;
+  //   padding-top: 52px;
+  //   display: flex;
 }
 
 .img-align {
@@ -410,6 +439,20 @@
   align-content: space-around;
   float: left;
   margin-right: 20px;
+  width: 280px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 250px;
+  }
+}
+
+.process__text {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 
 .strong {
@@ -455,6 +498,10 @@
 //   }
 // }
 
-.last-text {
-  margin-bottom: 50px;
+// .last-text {
+//   margin-bottom: 68px;
+// }
+
+.process__desc {
+  margin-bottom: 68px;
 }
