@@ -136,6 +136,11 @@
 // ADD FILE
 .form-add-file__wrapper {
   position: relative;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1444px) {
+    margin-bottom: 44px;
+  }
 }
 
 .form-add-file__icon {
