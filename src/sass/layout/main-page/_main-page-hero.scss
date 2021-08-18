@@ -1,3 +1,38 @@
+.hero {
+  //   padding-top: 38px;
+  background-color: #ffff;
+  //   position: absolute;
+}
+// @media screen and (min-width: 768px) {
+//   .hero {
+//       padding-top: 38px;
+
+//     background-image: url(../src/images/tablet/main-tablet/main-1.jpg),
+//       url(../src/images/tablet/main-tablet/main-2.jpg),
+//       url(../src/images/tablet/main-tablet/main-3.jpg),
+//       url(../src/images/tablet/main-tablet/main-4.jpg);
+
+//     background-position: 144px top, right top, left bottom, right bottom;
+//     background-repeat: no-repeat;
+
+//     background-size: 73px 73px;
+//   }
+// }
+
+// @media screen and (min-width: 1444px) {
+//   .hero {
+
+//     background-color: #ffff;
+//     background-image: url(../src/images/desctop/main/main-1.jpg),
+//       url(../src/images/desctop/main/main-2.jpg), url(../src/images/desctop/main/main-3.jpg),
+//       url(../src/images/desctop/main/main-4.jpg);
+
+//     background-position: 144px top, right top, left bottom, right bottom;
+//     background-repeat: no-repeat;
+//     background-size: 144px 144px;
+//   }
+// }
+
 .hero-container {
   width: 100%;
   padding-left: 20px;
@@ -7,50 +42,20 @@
   //   background-image: url(../src/images/mobile/decor-mobile.png);
 }
 
-// @media screen and (min-width: 768px) {
-//   .hero-container {
-// height: 319px;
-// width: 420px;
-//  padding-left: 60px;
-// padding-right: 60px;
-//     background-image: url(../src/images/mobile/decor-mobile.png);
-//   }
-// }
-// / @media screen and (min-width: 1444px) {
-//   .hero-container {
-// height: 584px;
-// width: 688px;
-//     background-image: url(../src/images/mobile/decor-mobile.png);
-//   }
-// }
-
-.hero {
-  padding-top: 38px;
-}
 @media screen and (min-width: 768px) {
-  .hero {
-    //   padding-top: 38px;
-    background-image: url(../src/images/tablet/main-tablet/main-1.jpg),
-      url(../src/images/tablet/main-tablet/main-2.jpg),
-      url(../src/images/tablet/main-tablet/main-3.jpg),
-      url(../src/images/tablet/main-tablet/main-4.jpg);
-
-    background-position: 144px top, right top, left bottom, right bottom;
-    background-repeat: no-repeat;
-    // background-size: ;
+  .hero-container {
+    height: 319px;
+    width: 420px;
+    padding-left: 60px;
+    padding-right: 60px;
+    // background-image: url(../src/images/mobile/decor-mobile.png);
   }
 }
-
 @media screen and (min-width: 1444px) {
-  .hero {
-    //   padding-top: 38px;
-    background-image: url(../src/images/desctop/main/main-1.jpg),
-      url(../src/images/desctop/main/main-2.jpg), url(../src/images/desctop/main/main-3.jpg),
-      url(../src/images/desctop/main/main-4.jpg);
-
-    background-position: 144px top, right top, left bottom, right bottom;
-    background-repeat: no-repeat;
-    // background-size: ;
+  .hero-container {
+    height: 584px;
+    width: 688px;
+    // background-image: url(../src/images/mobile/decor-mobile.png);
   }
 }
 
@@ -138,8 +143,7 @@
   border-radius: 0px 72px 0px 0px;
 }
 .hero__about-img__lights {
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
+  border-radius: 50%;
 }
 
 .hero__about-img__scull {
