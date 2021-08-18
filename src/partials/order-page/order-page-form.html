@@ -1,5 +1,6 @@
     <div class="section">
         <div class="section__order-form">
+            <!-- FORM -->
             <form class="order-form" autocomplete="off">
                 <h3 class="section-title section-title--margin-bottom section-title--center">Зв'яжіться з нами</h3>
                 <div class="order-form__field">
@@ -38,10 +39,21 @@
                 <label class="order-form__message">
                     Повідомлення
                     <textarea class="order-form__message-input" name="message" placeholder="Залишіть своє повідомлення"></textarea>
+                   
                 </label>
-                <p class="order-form__add-file-text">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
-            
+                <label for="file" class="order-form__add-file-text">
+                    *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+                </label>
+                <input type="file" name="add-file" id="file">                           
                 <button class="button-order order-form-btn" type="submit">Відправити</button>
-            </form>            
+            </form>
+
+            <!-- CONTACTS -->
+            <ul class="order-contacts">
+                <li>Телефони</li>
+                <li>Email</li>
+                <li>Робочий час</li>
+                <div class="order-page-gallery"></div>
+            </ul>
         </div>
     </div>
