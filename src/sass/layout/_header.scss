@@ -278,7 +278,7 @@
 @media screen and (max-width: 768px) {
   .mobile-contacts__link {
     position: absolute;
-    right: 23%;
+    right: 77px;
     width: 18px;
     height: 18px;
     &:hover,
@@ -296,11 +296,11 @@
         height: 82px;
         background: #ffffff;
         border-radius: 3px 0;
-        margin-right: 10px;
-        margin-bottom: 4px;
+
         position: absolute;
         top: 30px;
-        left: -70px;
+        left: -81px;
+        transform: translateX(10px);
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
       }
     }
