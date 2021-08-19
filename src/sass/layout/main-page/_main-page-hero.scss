@@ -155,9 +155,12 @@
 
 .hero__icon {
   fill: #008cef;
+  position: absolute;
   @media screen and (min-width: 1444px) {
     width: 18px;
     height: 28px;
+    left: -320px;
+    bottom: -25px;
   }
 }
 
@@ -247,7 +250,7 @@
     width: 144px;
     background-repeat: no-repeat;
     background-size: cover;
-    left: 144px;
+    left: -330px;
     bottom: -10px;
   }
 
@@ -260,7 +263,7 @@
     width: 144px;
     background-repeat: no-repeat;
     background-size: cover;
-    right: 0;
+    right: -470px;
     top: -10px;
   }
 
@@ -273,7 +276,7 @@
     width: 144px;
     background-repeat: no-repeat;
     background-size: cover;
-    left: 0;
+    left: -475px;
     bottom: -5px;
   }
 
@@ -286,7 +289,7 @@
     width: 144px;
     background-repeat: no-repeat;
     background-size: cover;
-    right: 0;
+    right: -470px;
     bottom: 144px;
   }
 }
