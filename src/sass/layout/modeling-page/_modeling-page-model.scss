@@ -1,24 +1,15 @@
-.modeling-container {
-  padding-right: 20px;
-  padding-left: 20px;
-
-  @media screen and (min-width: 768px) {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
+.modeling {
+  padding-top: 16px;
   @media screen and (min-width: 1444px) {
-    padding-right: 189px;
-    padding-left: 189px;
+    padding-top: 24px;
   }
 }
 
 .container-modeling__title {
-  padding-bottom: 16px;
-  padding-top: 16px;
+  margin-bottom: 16px;
 
   @media screen and (min-width: 1444px) {
-    padding-bottom: 24px;
-    padding-top: 24px;
+    margin-bottom: 24px;
   }
 }
 
@@ -30,7 +21,7 @@
   @media screen and (min-width: 768px) and (max-width: 1444px) {
     max-width: 515px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     &__item {
       flex-basis: calc((100% - 32px) / 2);
     }
