@@ -1,7 +1,7 @@
 .container-gallery {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
   //   background-image: url(../src/images/mobile/decor-mobile.png);
@@ -12,22 +12,21 @@
 //     margin-bottom: 52px;
 //   }
 // }
-//   .gallery__list > .gallery__item:not(:last-child) {
-//     margin-bottom: 56px;
-//   }
 
 @media screen and (min-width: 768px) {
   .container-gallery {
-    padding-left: 60px;
-    padding-right: 60px;
+    width: 768px;
+    // padding-left: 60px;
+    // padding-right: 60px;
     //   margin-bottom: 60px;
     // background-image: url(../src/images/tablet/decor-tablet.png);
   }
 }
 @media screen and (min-width: 1444px) {
   .container-gallery {
-    padding-left: 189px;
-    padding-right: 189px;
+    width: 1090px;
+    // padding-left: 189px;
+    // padding-right: 189px;
     // margin-bottom: 100px;
     // background-image: url(../src/images/desctop/decor-desctop.png);
   }
@@ -45,8 +44,7 @@
   font-size: 24px;
   line-height: 1.25;
   color: #487996;
-  margin-top: 52px;
-  padding-bottom: 16px;
+  // margin-top: 52px;
   //   padding-left: 49px;
   justify-content: left;
   list-style: none;
@@ -54,13 +52,13 @@
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
-    padding-bottom: 32px;
+    // margin-bottom: 32px;
 
     @media screen and (min-width: 1444px) {
       font-size: 24px;
       line-height: 1.25;
       margin-top: 100px;
-      padding-bottom: 52px;
+      // margin-bottom: 52px;
     }
   }
 }
@@ -88,10 +86,6 @@ img {
     flex-wrap: wrap;
     margin-top: -52px;
     margin-left: -20px;
-
-    // &:not(:last-child) {
-    //   margin-right: 18px;
-    // }
   }
 }
 
@@ -106,11 +100,13 @@ img {
   margin-bottom: 24px;
   align-items: center;
 }
+
+// .gallery__list > .gallery__item:not(:last-child) {
+//   margin-bottom: 52px;
+// }
+
 @media screen and (min-width: 768px) {
   .gallery__item {
-    // flex-basis: calc((100% - 64px) / 2);
-    // margin-left: 32px;
-
     flex-basis: calc(100% / 2 - 20px);
     margin-top: 52px;
     margin-left: 20px;
@@ -140,10 +136,4 @@ img {
       margin-top: 16px;
     }
   }
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
