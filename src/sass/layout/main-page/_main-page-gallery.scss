@@ -7,38 +7,32 @@
   //   background-image: url(../src/images/mobile/decor-mobile.png);
 }
 
-// @media screen and (min-width: 320px) {
-//   .container-gallery {
-//     margin-bottom: 52px;
-//   }
-// }
-//   .gallery__list > .gallery__item:not(:last-child) {
-//     margin-bottom: 56px;
-//   }
+@media screen and (min-width: 768px) {
+  .gallery__list > .gallery__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .container-gallery {
     padding-left: 60px;
     padding-right: 60px;
-    //   margin-bottom: 60px;
-    // background-image: url(../src/images/tablet/decor-tablet.png);
+    // width: 688px;
   }
 }
 @media screen and (min-width: 1444px) {
   .container-gallery {
     padding-left: 189px;
     padding-right: 189px;
-    // margin-bottom: 100px;
-    // background-image: url(../src/images/desctop/decor-desctop.png);
   }
 }
 
 .gallery {
-  padding-top: 26px;
+  // padding-top: 26px;
   padding-bottom: 26px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 52px;
+    // padding-top: 52px;
     padding-bottom: 56px;
   }
 }
@@ -50,9 +44,7 @@
   font-size: 24px;
   line-height: 1.25;
   color: #487996;
-  margin-top: 52px;
   padding-bottom: 16px;
-  //   padding-left: 49px;
   justify-content: left;
   list-style: none;
   text-transform: uppercase;
@@ -80,7 +72,6 @@ img {
   list-style: none;
   margin-left: auto;
   margin-right: auto;
-  // margin-bottom: -24px;
 
   // & > .gallery__item {
   //   margin-bottom: 24px;
@@ -116,7 +107,7 @@ img {
   .gallery__item {
     // flex-basis: calc((100% - 64px) / 2);
     // margin-left: 32px;
-    margin-top: 52px;
+    margin-top: 32px;
     flex-basis: calc(100% / 2 - 20px);
     margin-left: 20px;
   }
@@ -131,7 +122,7 @@ img {
   padding: 0;
   font-size: 16px;
   line-height: 1.25;
-  padding-bottom: 24px;
+  // padding-bottom: 24px;
   margin-top: 7px;
 
   @media screen and (min-width: 1444px) {
@@ -145,10 +136,4 @@ img {
       margin-top: 16px;
     }
   }
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
