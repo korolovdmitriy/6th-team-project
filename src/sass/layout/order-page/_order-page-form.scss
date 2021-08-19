@@ -1,0 +1,282 @@
+option:checked {
+  background-color: rgba(72, 121, 150, 0.5);
+  color: #fff;
+}
+
+.order-form {
+  width: 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 1444px) {
+    padding-right: 114px;
+    padding-left: 114px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    max-width: 515px;
+  }
+}
+
+.order-form__section {
+  margin-bottom: 52px;
+}
+
+.section-title--margin-bottom {
+  margin-bottom: 28px;
+}
+
+.section-title--center {
+  text-align: left;
+
+  @media screen and (min-width: 768px) and (max-width: 1444px) {
+    text-align: center;
+  }
+}
+
+.order-form__field {
+  position: relative;
+}
+
+.order-form__input {
+  width: 100%;
+  height: 24px;
+  margin-bottom: 44px;
+
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #487996;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2b2b2b;
+}
+
+.order-form__input:focus {
+  border-bottom: 1px solid #008cef;
+}
+
+.order-form__input:focus + .order-form__label,
+.order-form__input:not(:placeholder-shown) + .order-form__label {
+  transform: translateY(-20px);
+}
+
+.order-form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-family: var(--font-regular);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: #2b2b2b;
+
+  transition: transform 250ms linear;
+}
+
+.order-form__select-wrap {
+  position: relative;
+  height: 24px;
+  margin-bottom: 44px;
+}
+
+.order-form__select-wrap::before {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  bottom: 5px;
+  right: 0;
+  width: 15px;
+  height: 10px;
+
+  background-image: url('../images/mobile/take-order/arrow-down.svg');
+
+  background: {
+    repeat: no-repeat;
+    position: center;
+    size: contain;
+  }
+}
+
+.order-form__select {
+  position: relative;
+  appearance: none;
+  z-index: 10;
+  background-color: transparent;
+}
+
+// MESSAGE FIELD
+.order-form__message-input {
+  width: 100%;
+  height: 200px;
+  padding: 20px 22px;
+  margin-top: 4px;
+
+  border: 1px solid #487996;
+  border-radius: 50px 0px;
+  resize: none;
+  outline: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #cdcdcd;
+  }
+}
+
+.order-form__message-input:focus {
+  border: 1px solid #008cef;
+}
+
+// ADD FILE
+.form-add-file__wrapper {
+  position: relative;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1444px) {
+    margin-bottom: 44px;
+  }
+}
+
+.form-add-file__icon {
+  position: absolute;
+  top: -32px;
+  right: 20;
+  cursor: pointer;
+}
+
+.form-add-file__text {
+  max-width: 220px;
+  margin-bottom: 24px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: #cdcdcd;
+
+  @media screen and (min-width: 768px) {
+    max-width: 420px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    max-width: 516px;
+  }
+}
+
+.form-add-file__input {
+  display: none;
+}
+
+.order-form-btn {
+  display: block;
+  margin: 0 auto;
+
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+}
+
+.container__order-form {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1444px) {
+    width: 1060px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+}
+
+// CONTACTS
+.order-contacts__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1444px) {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 76px;
+  }
+}
+
+.order-contacts__list {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.order-contacts__list-time {
+  @media screen and (min-width: 768px) {
+    align-items: flex-end;
+  }
+}
+
+.order-contacts__list-tel {
+  @media screen and (min-width: 1444px) {
+    align-items: flex-end;
+  }
+}
+
+.order-contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1444px) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.section-title__contacts {
+  margin-bottom: 0px;
+  text-align: left;
+
+  @media screen and (min-width: 1444px) {
+    text-align: right;
+  }
+}
+
+.order-contacts__info-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2b2b2b;
+
+  @media screen and (min-width: 1444px) {
+    font-size: 18px;
+  }
+}
+
+// GALLERY
+.order-page-gallery {
+  display: none;
+
+  @media screen and (min-width: 1444px) {
+    display: block;
+
+    width: 438px;
+    height: 294px;
+    background-image: url(../images/desctop/take-order/take-order-5.jpg);
+  }
+}

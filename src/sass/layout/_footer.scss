@@ -1,0 +1,134 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #f5f5fa;
+  box-shadow: 0 -2px 5px 2px rgba(72, 121, 150, 0.1);
+  text-align: center;
+}
+.footer__logo {
+  margin: 0 auto;
+  width: 192px;
+  height: 42px;
+  margin-bottom: 19px;
+}
+.footer__logo-img {
+  width: 192px;
+  height: 48px;
+}
+.footer__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #2b2b2b;
+}
+.footer__nav-link {
+  letter-spacing: 0.01em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #008cef;
+  }
+}
+
+.footer__contacts-link {
+  color: #487996;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #008cef;
+  }
+}
+.footer__nav {
+  margin-bottom: 24px;
+}
+
+.footer__nav-item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer__social {
+  margin-bottom: 24px;
+}
+.footer__social-item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer__mail-item {
+  margin-bottom: 24px;
+}
+.footer__tel-item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.footer__social-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #008cef;
+  }
+}
+.footer__contacts-text {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer__address {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer {
+    text-align: start;
+  }
+  .footer__contacts {
+    text-align: right;
+  }
+  .footer__nav {
+    margin-right: 135px;
+    margin-bottom: 0;
+  }
+  .footer__social {
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+  .footer__mail-item {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .footet__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer__logo-img {
+    margin: 0;
+  }
+  .footer__logo {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 136px;
+  }
+  .footer__contacts {
+    text-align: left;
+  }
+  .footer__nav {
+    margin-right: 87px;
+  }
+  .footer__social {
+    margin-right: 145px;
+  }
+}

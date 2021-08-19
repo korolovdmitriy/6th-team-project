@@ -1,0 +1,217 @@
+    .more-photo{
+        padding-bottom: 84px;
+    }
+    
+    .more-photo__title{
+        font-family: var(--font-bolt);
+        font-size: 24px;
+        line-height: 1.25;
+        color: #487996;    
+    }
+    .more-photo__list{
+        margin-top: 16px;
+    }
+           
+    .more-photo__load-icon{
+        display: flex;
+        justify-content: center;
+    }
+
+    .more-photo__list-link:hover{
+            opacity: 0.7;        
+    }
+
+    .more-photo__load-icon{
+        margin-top: 40px;       
+    }
+
+    #overlay {
+        position: fixed; 
+        display: none; 
+        width: 100vw; 
+        height: 100%; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(43, 43, 43, 0.8);
+        backdrop-filter: blur(4px); 
+        z-index: 2; 
+        cursor: pointer; 
+      }
+
+      .thumb__modal{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 1168px;
+        transform: translate(-50%, -50%);
+      }
+
+      .img-modal{
+        width: 236px;
+      }
+
+      .svg-left{
+        width: 6px;
+        height: 10px;
+        margin-right: 12px;
+      }
+
+      .svg-right{
+        width: 6px;
+        height: 10px;
+        margin-left: 12px;
+      }
+
+
+     
+    @media screen and (max-width: 767px) {
+        .photo-tablet{
+            display: none;
+        }       
+        .more-photo__list-link:not(:first-child){
+            margin-top: 16px;             
+        }  
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .more-photo{
+            padding-bottom: 60px;
+        }
+
+        .more-photo__list{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;            
+        }
+
+        .more-photo__title{
+            font-size: 36px;
+        }
+
+        .more-photo__list{
+            margin-top: 32px;            
+        }
+
+        .img-1{
+            width: 247px;
+        }
+
+        .thumb__modal{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);        
+        }
+
+        .img-modal-thumb{
+            width: 554px;
+            height: 369px;
+        }
+
+        .img-modal{
+            width: 100%;
+            height: 100%;
+        }
+
+        .svg-left{
+            width: 14px;
+            height: 25px;
+            margin-right: 12px;
+        }
+  
+        .svg-right{
+            width: 14px;
+            height: 25px;
+            margin-left: 12px;
+        } 
+
+    }
+
+
+    @media screen and (min-width: 768px) and (max-width: 1443px){
+        .more-photo__list-link{
+            margin-top: 20px;       
+        
+                &:not(:nth-child(3n)){
+                    margin-right: 20px;
+                }}
+    }
+
+    @media screen and (min-width: 1444px) {
+        .more-photo{
+            padding-bottom: 108px;            
+        }
+
+        .more-photo__thumb{
+            width: 1092px;
+        }
+
+        .more-photo__title{
+            font-size: 48px;
+        }
+
+        .more-photo__list-link{                       
+            margin-bottom: 32px;
+
+                &:not(:nth-child(3n)){
+                margin-right: 32px;}           
+        }
+
+        .photo-img{
+            width: 100%;
+        }
+        .list-1{
+            width: 406px;
+            height: 260px;
+        }
+        .list-3{
+            width: 214px;
+        }
+
+        .more-photo__load-icon{
+            margin-top: 64px;       
+        }
+
+        .thumb__modal{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        
+        }
+
+        .img-modal-thumb{
+            width: 906px;
+            height: 605px;
+        }
+
+        .img-modal{
+            width: 100%;
+            height: 100%;
+        }
+
+        .svg-left{
+            width: 23px;
+            height: 40px;
+            margin-right: 47px;
+        }
+  
+        .svg-right{
+            width: 23px;
+            height: 40px;
+            margin-left: 47px;
+        }
+  
+
+    }
+
+    
+    

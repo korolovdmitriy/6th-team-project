@@ -1,36 +1,151 @@
-.scanProcess__heading {
-    font-family:var(--primary-font);
-    font-weight: bold;
-    line-height: 23px;
-    
-    text-transform: uppercase;
-    
-    color: #487996;
-    
-    @media screen and (min-width: 768px) {
-    font-size: 24px;
-    line-height: 30px;
-    }
-    @media screen and (min-width: 1440px) {
-    font-size: 36px;
-    line-height: 45px;
-    }
-    }
-    .scanProcess__link {
-    font-family: var(--primary-font);
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 24px;
-      
-      text-align: center;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      
-      padding: 16px 32px;
-      
-      color: #487996;
-      
-      background: #F5F5FA;
-      box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
-      border-radius: 30.5px;
+.section-title{
+line-height: 23px;
+margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+line-height: 30px;
+margin-bottom: 24px;
+text-align: inherit;
+  }
+  @media screen and (min-width: 1440px) {
+margin-bottom: 52px;
+  }
+  }
+
+.scanProcess__list {
+      margin-top: -10px;
+      margin-left: -10px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 52px;
+  
+      @media screen and (min-width: 768px) {
+          display: flex;
+          flex-wrap: nowrap;
+          margin-top: 0;
+          margin-left: 0;
+
+          margin-bottom: 68px;
+
+        align-items: center;
+        justify-content: space-between;
+        }
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 116px;
+        }
       }
+
+  .scanProcess__item {
+      width: 133px;
+      background: #FFFFFF;
+      opacity: 0.8;
+      box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+      border-radius: 50px 0px;
+      padding: 20px;
+
+  
+      margin-top: 10px;
+      margin-left: 10px;
+    
+      @media screen and (min-width: 768px) {
+        width: min-content;
+        margin: 0; 
+    }
+  }
+  .scanProcess__item::before {
+      display: block;
+      content: "";
+       height: 82px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .scanProcess__item:nth-child(1)::before {
+      background-image: url(../images/mobile/3d-scanning/3d-scanning-2.png);
+
+      @media screen and (min-width: 768px) {
+          width: 108px;
+          height: 94px;
+
+          background-image: url(../images/tablet/3d-scanning/3d-scanning-2.png);
+      }
+
+      @media screen and (min-width: 1440px) {
+          width: 177px;
+          height: 154px;
+
+          background-image: url(../images/desctop/3d-scanning/3d-scanning-2.png);
+      }
+  }
+  .scanProcess__item:nth-child(2)::before {
+      background-image: url(../images/mobile/3d-scanning/3d-scanning-3.png);
+
+      @media screen and (min-width: 768px) {
+          width: 108px;
+          height: 94px;
+          background-image: url(../images/tablet/3d-scanning/3d-scanning-3.png);
+      }
+      
+      @media screen and (min-width: 1440px) {
+          width: 177px;
+          height: 154px;
+          background-image: url(../images/desctop/3d-scanning/3d-scanning-3.png);
+      }
+  }
+  .scanProcess__item:nth-child(3)::before {
+      background-image: url(../images/mobile/3d-scanning/3d-scanning-4.png);
+
+      @media screen and (min-width: 768px) {
+          width: 108px;
+          height: 94px;
+          background-image: url(../images/tablet/3d-scanning/3d-scanning-4.png);
+      }
+      
+      @media screen and (min-width: 1440px) {
+          width: 177px;
+          height: 154px;
+          background-image: url(../images/desctop/3d-scanning/3d-scanning-4.png);
+      }
+  }
+  .scanProcess__item:nth-child(4)::before {
+      background-image: url(../images/mobile/3d-scanning/3d-scanning-5.png);
+
+      @media screen and (min-width: 768px) {
+          width: 108px;
+          height: 94px;
+          background-image: url(../images/tablet/3d-scanning/3d-scanning-5.png);
+      }
+      
+      @media screen and (min-width: 1440px) {
+          width: 177px;
+          height: 154px;
+          background-image: url(../images/desctop/3d-scanning/3d-scanning-5.png);
+      }
+  }
+  .scanProcess__team {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+
+      color: #487996;
+      margin-top: 15px;
+
+      @media screen and (min-width: 768px) {
+          margin-top: 30px;
+      }
+      @media screen and (min-width: 1440px) {
+        font-size: 18px;
+        line-height: 23px;
+      }
+  }
+  .scanProcess-box {
+      text-align: center;
+      margin-bottom: 92px;
+
+      @media screen and (min-width: 1440px) {
+    margin-bottom: 116px;
+      }
+  }
+
+  

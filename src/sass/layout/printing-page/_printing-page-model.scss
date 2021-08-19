@@ -1,0 +1,198 @@
+.examples {
+  padding-top: 24px;
+}
+
+.examples__title {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+
+.example__picture-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -16px;
+  margin-left: -10px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    margin-left: -12px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    margin-left: -21px;
+  }
+}
+
+.example__picture-item {
+  flex-basis: calc((100% - 20px) / 2);
+  margin-top: 16px;
+  margin-left: 10px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 48px) / 4);
+    margin-left: 12px;
+  }
+  @media screen and (min-width: 1444px) {
+    flex-basis: calc((100% - 84px) / 4);
+    margin-left: 21px;
+  }
+}
+
+.example__picture-block {
+  display: block;
+  padding-top: 118px;
+  width: 133px;
+  height: 158px;
+  position: relative;
+  background: #fff;
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #fff;
+  border-radius: 50px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 136px;
+    width: 152px;
+    height: 181px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    padding-top: 235px;
+    width: 250px;
+    height: 298px;
+  }
+}
+
+.example__picture1::after {
+  content: '';
+  position: absolute;
+  width: 92px;
+  height: 76px;
+  top: 26px;
+  left: 18px;
+  background-image: url(../images/mobile/3d-printing/3d-printing-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/3d-printing/3d-printing-1@2x.png);
+    position: absolute;
+    width: 106px;
+    height: 86px;
+    top: 30px;
+    left: 19px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    background-image: url(../images/desctop/3d-printing/3d-printing-1.png);
+    position: absolute;
+    width: 174px;
+    height: 142px;
+    top: 56px;
+    left: 32px;
+  }
+}
+
+.example__picture2::after {
+  content: '';
+  position: absolute;
+  width: 102px;
+  height: 64px;
+  top: 33px;
+  left: 17px;
+  background-image: url(../images/mobile/3d-printing/3d-printing-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/3d-printing/3d-printing-2@2x.png);
+    position: absolute;
+    width: 118px;
+    height: 73px;
+    top: 44px;
+    left: 20px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    background-image: url(../images/desctop/3d-printing/3d-printing-2.png);
+    position: absolute;
+    width: 194px;
+    height: 120px;
+    top: 77px;
+    left: 33px;
+  }
+}
+
+.example__picture3::after {
+  content: '';
+  position: absolute;
+  width: 44px;
+  height: 70px;
+  top: 31px;
+  left: 44px;
+  background-image: url(../images/mobile/3d-printing/3d-printing-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/3d-printing/3d-printing-3.png);
+    position: absolute;
+    width: 50px;
+    height: 81px;
+    top: 36px;
+    left: 51px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    background-image: url(../images/desctop/3d-printing/3d-printing-3.png);
+    position: absolute;
+    width: 83px;
+    height: 133px;
+    top: 64px;
+    left: 84px;
+  }
+}
+
+.example__picture4::after {
+  content: '';
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  top: 23px;
+  left: 23px;
+  background-image: url(../images/mobile/3d-printing/3d-printing-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/3d-printing/3d-printing-4.png);
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    top: 27px;
+    left: 27px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    background-image: url(../images/desctop/3d-printing/3d-printing-4.png);
+    position: absolute;
+    width: 161px;
+    height: 161px;
+    top: 50px;
+    left: 44px;
+  }
+}
+
+.example__desc {
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #487996;
+
+  @media screen and (min-width: 1444px) {
+    font-size: 18px;
+  }
+}

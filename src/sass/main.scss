@@ -4,11 +4,12 @@
 
 //BASE
 @import './base/common';
-@import './base/conteiner';
+@import './base/container';
+@import './base/bg-pages';
+@import './base/section';
 
 //COMPONENTS
 @import './components/button-order';
-@import './components/button-send';
 @import './components/section-title';
 
 //LAYOUT
