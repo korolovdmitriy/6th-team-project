@@ -6,13 +6,13 @@
         font-family: var(--font-bolt);
         font-size: 24px;
         line-height: 1.25;
-        color: #487996;
-    
+        color: #487996;    
     }
-    
-    .photo-thumb{
+    .more-photo__list{
         margin-top: 16px;
-        
+    }
+    .more-photo__list-link:not(:first-child){
+        margin-top: 16px;             
     }    
        
     .more-photo__load-icon{
@@ -20,7 +20,7 @@
         justify-content: center;
     }
 
-    .photo-thumb:hover {
+    .more-photo__list-link:hover{
             opacity: 0.7;        
     }
 
@@ -29,18 +29,18 @@
     }
 
     #overlay {
-        position: fixed; /* Sit on top of the page content */
-        display: none; /* Hidden by default */
-        width: 100vw; /* Full width (cover the whole page) */
-        height: 100%; /* Full height (cover the whole page) */
+        position: fixed; 
+        display: none; 
+        width: 100vw; 
+        height: 100%; 
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         background: rgba(43, 43, 43, 0.8);
-        backdrop-filter: blur(4px); /* Black background with opacity */
-        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-        cursor: pointer; /* Add a pointer on hover */
+        backdrop-filter: blur(4px); 
+        z-index: 2; 
+        cursor: pointer; 
       }
 
       .thumb__modal{
@@ -70,10 +70,9 @@
       }
 
 
-      
-
+     
     @media screen and (max-width: 767px) {
-        .photo-thumb-tablet{
+        .photo-tablet{
             display: none;
         }       
     }
@@ -84,20 +83,17 @@
             padding-bottom: 60px;
         }
 
-        .more-photo__thumb{
-            padding-left: 60px;      
-        }
-
-        .photo-container{
+        .more-photo__list{
             display: flex;
             flex-wrap: wrap;
+            align-items: flex-end;            
         }
 
         .more-photo__title{
             font-size: 36px;
         }
 
-        .photo-thumb{
+        .more-photo__list-link{
             margin-top: 32px;            
         }
 
@@ -105,7 +101,7 @@
             width: 247px;
         }
 
-        .photo-thumb{
+        .more-photo__list-link{
             margin-top: 20px;       
         
                 &:not(:nth-child(3n)){
@@ -157,11 +153,11 @@
             font-size: 48px;
         }
         
-        .photo-container{
+        .more-photo__list{
             margin-top: 52px;            
         }
 
-        .photo-thumb{
+        .more-photo__list-link{
             margin-top: 32px;       
         
                 &:not(:nth-child(3n)) {
@@ -181,7 +177,7 @@
             margin-top: 64px;       
         }
 
-        .photo-thumb{
+        .more-photo__list-link{
             margin-top: 20px;       
         
                 &:not(:nth-child(3n)){
