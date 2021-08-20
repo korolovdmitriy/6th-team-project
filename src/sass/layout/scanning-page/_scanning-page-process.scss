@@ -1,151 +1,148 @@
-.section-title{
-line-height: 23px;
-margin-bottom: 16px;
+.scan_process__title {
+  line-height: 23px;
+  margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-line-height: 30px;
-margin-bottom: 24px;
-text-align: inherit;
+    line-height: 30px;
+    margin-bottom: 24px;
+    text-align: inherit;
   }
   @media screen and (min-width: 1440px) {
-margin-bottom: 52px;
+    margin-bottom: 52px;
   }
+}
+
+.scan_process__list {
+  margin-top: -10px;
+  margin-left: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-left: 0;
+
+    margin-bottom: 68px;
+
+    align-items: center;
+    justify-content: space-between;
   }
-
-.scanProcess__list {
-      margin-top: -10px;
-      margin-left: -10px;
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 52px;
-  
-      @media screen and (min-width: 768px) {
-          display: flex;
-          flex-wrap: nowrap;
-          margin-top: 0;
-          margin-left: 0;
-
-          margin-bottom: 68px;
-
-        align-items: center;
-        justify-content: space-between;
-        }
-      @media screen and (min-width: 1440px) {
-        margin-bottom: 116px;
-        }
-      }
-
-  .scanProcess__item {
-      width: 133px;
-      background: #FFFFFF;
-      opacity: 0.8;
-      box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
-      border-radius: 50px 0px;
-      padding: 20px;
-
-  
-      margin-top: 10px;
-      margin-left: 10px;
-    
-      @media screen and (min-width: 768px) {
-        width: min-content;
-        margin: 0; 
-    }
-  }
-  .scanProcess__item::before {
-      display: block;
-      content: "";
-       height: 82px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-  }
-  .scanProcess__item:nth-child(1)::before {
-      background-image: url(../images/mobile/3d-scanning/3d-scanning-2.png);
-
-      @media screen and (min-width: 768px) {
-          width: 108px;
-          height: 94px;
-
-          background-image: url(../images/tablet/3d-scanning/3d-scanning-2.png);
-      }
-
-      @media screen and (min-width: 1440px) {
-          width: 177px;
-          height: 154px;
-
-          background-image: url(../images/desctop/3d-scanning/3d-scanning-2.png);
-      }
-  }
-  .scanProcess__item:nth-child(2)::before {
-      background-image: url(../images/mobile/3d-scanning/3d-scanning-3.png);
-
-      @media screen and (min-width: 768px) {
-          width: 108px;
-          height: 94px;
-          background-image: url(../images/tablet/3d-scanning/3d-scanning-3.png);
-      }
-      
-      @media screen and (min-width: 1440px) {
-          width: 177px;
-          height: 154px;
-          background-image: url(../images/desctop/3d-scanning/3d-scanning-3.png);
-      }
-  }
-  .scanProcess__item:nth-child(3)::before {
-      background-image: url(../images/mobile/3d-scanning/3d-scanning-4.png);
-
-      @media screen and (min-width: 768px) {
-          width: 108px;
-          height: 94px;
-          background-image: url(../images/tablet/3d-scanning/3d-scanning-4.png);
-      }
-      
-      @media screen and (min-width: 1440px) {
-          width: 177px;
-          height: 154px;
-          background-image: url(../images/desctop/3d-scanning/3d-scanning-4.png);
-      }
-  }
-  .scanProcess__item:nth-child(4)::before {
-      background-image: url(../images/mobile/3d-scanning/3d-scanning-5.png);
-
-      @media screen and (min-width: 768px) {
-          width: 108px;
-          height: 94px;
-          background-image: url(../images/tablet/3d-scanning/3d-scanning-5.png);
-      }
-      
-      @media screen and (min-width: 1440px) {
-          width: 177px;
-          height: 154px;
-          background-image: url(../images/desctop/3d-scanning/3d-scanning-5.png);
-      }
-  }
-  .scanProcess__team {
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 18px;
-      text-align: center;
-
-      color: #487996;
-      margin-top: 15px;
-
-      @media screen and (min-width: 768px) {
-          margin-top: 30px;
-      }
-      @media screen and (min-width: 1440px) {
-        font-size: 18px;
-        line-height: 23px;
-      }
-  }
-  .scanProcess-box {
-      text-align: center;
-      margin-bottom: 92px;
-
-      @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1440px) {
     margin-bottom: 116px;
-      }
+  }
+}
+
+.scan_process__item {
+  width: 133px;
+  background: #ffffff;
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+  padding: 20px;
+
+  margin-top: 10px;
+  margin-left: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: min-content;
+    margin: 0;
+  }
+}
+.scan_process__item::before {
+  display: block;
+  content: '';
+  height: 82px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.scan_process__item:nth-child(1)::before {
+  background-image: url(../images/mobile/3d-scanning/3d-scanning-2.png);
+
+  @media screen and (min-width: 768px) {
+    width: 108px;
+    height: 94px;
+
+    background-image: url(../images/tablet/3d-scanning/3d-scanning-2.png);
   }
 
-  
+  @media screen and (min-width: 1440px) {
+    width: 177px;
+    height: 154px;
+
+    background-image: url(../images/desctop/3d-scanning/3d-scanning-2.png);
+  }
+}
+.scan_process__item:nth-child(2)::before {
+  background-image: url(../images/mobile/3d-scanning/3d-scanning-3.png);
+
+  @media screen and (min-width: 768px) {
+    width: 108px;
+    height: 94px;
+    background-image: url(../images/tablet/3d-scanning/3d-scanning-3.png);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 177px;
+    height: 154px;
+    background-image: url(../images/desctop/3d-scanning/3d-scanning-3.png);
+  }
+}
+.scan_process__item:nth-child(3)::before {
+  background-image: url(../images/mobile/3d-scanning/3d-scanning-4.png);
+
+  @media screen and (min-width: 768px) {
+    width: 108px;
+    height: 94px;
+    background-image: url(../images/tablet/3d-scanning/3d-scanning-4.png);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 177px;
+    height: 154px;
+    background-image: url(../images/desctop/3d-scanning/3d-scanning-4.png);
+  }
+}
+.scan_process__item:nth-child(4)::before {
+  background-image: url(../images/mobile/3d-scanning/3d-scanning-5.png);
+
+  @media screen and (min-width: 768px) {
+    width: 108px;
+    height: 94px;
+    background-image: url(../images/tablet/3d-scanning/3d-scanning-5.png);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 177px;
+    height: 154px;
+    background-image: url(../images/desctop/3d-scanning/3d-scanning-5.png);
+  }
+}
+.scan_process__team {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #487996;
+  margin-top: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+.scan_process-box {
+  text-align: center;
+  margin-bottom: 92px;
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 116px;
+  }
+}
