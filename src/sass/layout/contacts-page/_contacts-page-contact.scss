@@ -1,13 +1,32 @@
-.contacts-contacts__info {
+// СТИЛИ СЕКЦИИ КОНТАКТОВ И ФОРМЫ
+.contacts_page {
+  padding-bottom: 76px;
+  @media screen and (min-width: 1444px) {
+    padding-bottom: 100px;
+  }
+}
+.contacts_page__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @media screen and (min-width: 1444px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+// СТИЛИ КОНТАКТОВ
+
+.contacts-page__contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
-    align-items: flex-start;
   }
 
   @media screen and (min-width: 1444px) {
@@ -18,6 +37,10 @@
 .contacts_page__list {
   &:not(:last-child) {
     margin-bottom: 68px;
+
+    @media screen and (min-width: 768px) and (max-width: 1443px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -34,136 +57,137 @@
   color: #2b2b2b;
 }
 
-// .contacts-contacts__info {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
+// СТИЛИ ФОРМЫ
 
-//   @media screen and (min-width: 768px) {
-//     flex-direction: row;
-//     align-items: flex-start;
-//   }
+.contacts-page__form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 
-//   @media screen and (min-width: 1444px) {
-//     flex-direction: column;
-//   }
-// }
+  @media screen and (min-width: 1444px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+  }
+}
 
-// .contacts-contacts__list {
-//   display: flex;
-//   flex-direction: column;
-//   &:not(:last-child) {
-//     margin-bottom: 24px;
-//   }
+.contacts-form__form {
+  width: 100%;
+  margin-bottom: 52px;
 
-//   @media screen and (min-width: 1444px) {
-//     flex-direction: column;
-//   }
-// }
+  @media screen and (min-width: 768px) and (max-width: 1444px) {
+    padding-right: 114px;
+    padding-left: 114px;
+  }
 
-// .contacts-contacts__item {
-//   &:not(:last-child) {
-//     margin-bottom: 8px;
-//     margin-right: 20px;
-//   }
-// }
-// .contacts-contacts__item-last {
-//   padding-bottom: 76px;
-// }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 76px;
+  }
 
-//   align-items: flex-end;
-//   margin-bottom: 76px;
-// }
-// }
+  @media screen and (min-width: 1444px) {
+    max-width: 515px;
+    margin-bottom: 100px;
+  }
+}
 
-// .order-contacts__list {
-//   display: flex;
-//   flex-direction: column;
+.section-title__form {
+  margin-bottom: 28px;
+  text-align: left;
 
-//   &:not(:last-child) {
-//     margin-bottom: 24px;
+  @media screen and (min-width: 768px) and (max-width: 1444px) {
+    text-align: center;
+  }
+}
 
-//     @media screen and (min-width: 768px) {
-//       margin-bottom: 0px;
-//     }
+.contacts-form__field {
+  position: relative;
+}
 
-//     @media screen and (min-width: 768px) {
-//       margin-bottom: 30px;
-//     }
-//   }
-// }
+.contacts-form__input {
+  width: 100%;
+  height: 24px;
+  margin-bottom: 44px;
 
-// .order-contacts__list-time {
-//   @media screen and (min-width: 768px) {
-//     align-items: flex-end;
-//   }
-// }
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #487996;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2b2b2b;
+}
 
-// .order-contacts__list-tel {
-//   @media screen and (min-width: 1444px) {
-//     align-items: flex-end;
-//   }
-// }
+.contacts-form__input:focus {
+  border-bottom: 1px solid #008cef;
+}
 
-// .order-contacts__item {
-//   &:not(:last-child) {
-//     margin-bottom: 8px;
+.contacts-form__input:focus + .contacts-form__label,
+.contacts-form__input:not(:placeholder-shown) + .contacts-form__label {
+  transform: translateY(-20px);
+}
 
-//     @media screen and (min-width: 1444px) {
-//       margin-bottom: 18px;
-//     }
-//   }
-// }
+.contacts-form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // у нас в проекте пока только две переменные только стили текста
+  //   font-family: var(--font-regular);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: #2b2b2b;
 
-// .section-title__contacts {
-//   margin-bottom: 0px;
-//   text-align: left;
+  transition: transform 250ms linear;
+}
 
-//   padding-bottom: 8px;
-//   justify-items: center;
+.contacts-form__message-input {
+  width: 100%;
+  height: 200px;
+  padding: 20px 22px;
+  margin-top: 4px;
 
-//   padding-bottom: 8px;
-//   justify-items: center;
+  border: 1px solid #487996;
+  border-radius: 50px 0px;
+  resize: none;
+  outline: none;
 
-//   @media screen and (min-width: 1444px) {
-//     text-align: right;
-//   }
-// }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #cdcdcd;
+  }
+}
 
-// .contacts-contacts__info-text {
-//   font-family: Cera Pro;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 16px;
-//   line-height: 20px;
+.contacts-form__message-input:focus {
+  border: 1px solid #008cef;
+}
 
-//   text-transform: capitalize;
-//   color: #2b2b2b;
-// }
+.contacts-form__add-file-text {
+  max-width: 220px;
+  margin-bottom: 24px;
 
-// .contacts-contacts__list {
-//   margin-bottom: 76px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #cdcdcd;
 
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: flex-start;
-//   }
+  @media screen and (min-width: 768px) {
+    max-width: 420px;
+  }
 
-//   @media screen and (min-width: 1444px) {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-end;
-//   }
-// }
+  @media screen and (min-width: 1444px) {
+    max-width: 516px;
+  }
+}
 
-// .contacts-contacts__info-text {
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 1.25;
-//   color: #2b2b2b;
+.contacts-form-btn {
+  display: block;
+  margin: 0 auto;
 
-//   @media screen and (min-width: 1444px) {
-//     font-size: 18px;
-//   }
-// }
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+}
