@@ -53,6 +53,10 @@
   position: relative;
   max-width: 420px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1444px) {
+    max-width: 1102px;
+  }
 }
 
 .hero__title {
@@ -85,7 +89,7 @@
 }
 
 .hero__list {
-  position: relative;
+  //   position: relative;
   display: flex;
   justify-content: center;
 
@@ -165,8 +169,8 @@
 
   @media screen and (min-width: 1444px) {
     padding: 56px;
-    left: 65px;
-    bottom: 160px;
+    left: 100px;
+    bottom: 10px;
   }
 }
 
@@ -264,7 +268,7 @@
     width: 144px;
     background-repeat: no-repeat;
     background-size: cover;
-    left: 144px;
+    left: -54px;
     bottom: -10px;
   }
 
@@ -278,7 +282,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     right: 0;
-    top: -10px;
+    top: -50px;
   }
 
   .background__left-bottom {
@@ -290,8 +294,8 @@
     width: 144px;
     background-repeat: no-repeat;
     background-size: cover;
-    left: 0;
-    bottom: -5px;
+    left: -190px;
+    bottom: -95px;
   }
 
   .background__right-bottom {
@@ -304,6 +308,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     right: 0;
-    bottom: 144px;
+    bottom: 44px;
   }
 }

@@ -54,7 +54,7 @@
     padding-bottom: 32px;
 
     @media screen and (min-width: 1444px) {
-      font-size: 24px;
+      font-size: 48px;
       line-height: 1.25;
       margin-top: 100px;
       padding-bottom: 52px;
@@ -102,7 +102,12 @@ img {
   // height: 101px;
   margin-bottom: 24px;
   align-items: center;
+
+  .gallery__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .gallery__item {
     // flex-basis: calc((100% - 64px) / 2);
