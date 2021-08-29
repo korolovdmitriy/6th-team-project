@@ -13,7 +13,6 @@
 @import './components/section-title';
 
 //LAYOUT
-
 @import './layout/header';
 @import './layout/header-menu';
 
@@ -45,10 +44,10 @@
 @import './layout/order-page/order-page-contacts';
 @import './layout/order-page/order-page-gallery';
 
-// CONTACTS PAGE
-
+//CONTACTS PAGE
 @import './layout/contacts-page/contacts-page-desc';
-@import './layout/contacts-page/contacts-page-contact';
+@import './layout/contacts-page/contacts-page-form';
+@import './layout/contacts-page/contacts-page-contacts';
 
 //FOOTER
 @import './layout/footer';
