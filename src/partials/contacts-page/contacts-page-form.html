@@ -1,0 +1,55 @@
+<!-- contacts__form-start -->
+<section class="contacts-page-section">
+  <div class="container container__contacts-form">
+    <form class="contacts-form contacts-form__section" autocomplete="off">
+      <h3 class="section-title contacts-section-title--margin-bottom section-title--center">
+        Зв'яжіться з нами
+      </h3>
+      <div class="contacts-form__field">
+        <input
+          class="contacts-form__input"
+          type="text"
+          name="username"
+          id="name"
+          placeholder=" "
+          minlength="3"
+          pattern="[a-zA-Zа-яёА-ЯЁ]+"
+          title="Заголовні / рядкові літери кирилиці / латиниці й пробіли"
+          required
+        />
+        <label class="contacts-form__label" for="name">Ім'я</label>
+      </div>
+      <div class="contacts-form__field">
+        <input
+          class="contacts-form__input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder=" "
+          required
+        />
+        <label class="contacts-form__label" for="email">Email</label>
+      </div>
+      <label class="contacts-form__message">
+        Повідомлення
+        <textarea
+          class="contacts-form__message-input"
+          name="message"
+          placeholder="Залишіть своє повідомлення"
+        ></textarea>
+      </label>
+      <div class="contacts__form-add-file__wrapper">
+        <label for="file" class="form-add-file__text">
+          *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+          <svg class="form-add-file__icon" width="22" height="20">
+            <use href="./images/sprite.svg#icon-paper-clip"></use>
+          </svg>
+          <input class="form-add-file__input" type="file" name="file" id="file" />
+        </label>
+      </div>
+
+      <button class="button-order contacts-form-btn" type="submit">Відправити</button>
+    </form>
+  </div>
+</section>
+<!-- contacts__form-start -->
