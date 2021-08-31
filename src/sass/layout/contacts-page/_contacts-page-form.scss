@@ -1,4 +1,32 @@
 // contacts__form-start
+.contacts-page-sections-row {
+  @media screen and (min-width: 1444px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-around;
+    justify-items: center;
+    width: 1060px;
+    margin: 0 auto;
+  }
+}
+.container-form {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 680px;
+  }
+  @media screen and (min-width: 1444px) {
+    width: 515px;
+  }
+}
 option:checked {
   background-color: rgba(72, 121, 150, 0.5);
   color: #fff;
@@ -8,13 +36,13 @@ option:checked {
 }
 .contacts-section-title--margin-bottom {
   margin-bottom: 8px;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     margin-bottom: 16px;
   }
 }
 .section-title--center {
   text-align: left;
-  @media screen and (min-width: 768px) and (max-width: 1440px) {
+  @media screen and (min-width: 768px) and (max-width: 1444px) {
     text-align: center;
   }
 }
@@ -78,7 +106,7 @@ option:checked {
 .contacts__form-add-file__wrapper {
   position: relative;
   margin-bottom: 24px;
-  @media screen and (min-width: 768px) and (max-width: 1440px) {
+  @media screen and (min-width: 768px) and (max-width: 1444px) {
     margin-bottom: 44px;
   }
 }
@@ -96,7 +124,7 @@ option:checked {
   @media screen and (min-width: 768px) {
     max-width: 420px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     max-width: 516px;
   }
 }
@@ -123,8 +151,8 @@ option:checked {
     align-items: center;
     margin-bottom: 76px;
   }
-  @media screen and (min-width: 1440px) {
-    width: 1060px;
+  @media screen and (min-width: 1444px) {
+    width: 515px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;

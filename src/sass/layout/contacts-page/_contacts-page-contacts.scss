@@ -1,4 +1,21 @@
 // contacts__contacts-start
+.containerc-contacts {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 680px;
+  }
+  @media screen and (min-width: 1444px) {
+    width: 515px;
+  }
+}
 .contacts-contacts__info {
   display: flex;
   flex-direction: column;
@@ -10,7 +27,9 @@
   @media screen and (max-width: 1439px) {
     margin-bottom: 52px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
+    width: 515px;
+    margin: 0;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -24,28 +43,28 @@
     align-items: flex-end;
     text-align: right;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     align-items: flex-start;
   }
 }
 .contacts-contacts__list-tel {
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     align-items: flex-start;
   }
 }
 .contacts-contacts__item {
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     text-align: left;
   }
   &:not(:last-child) {
     padding-bottom: 8px;
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1444px) {
       padding-bottom: 18px;
     }
   }
   &:last-child {
     padding-bottom: 24px;
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1444px) {
       padding-bottom: 68px;
     }
   }
@@ -61,7 +80,7 @@
   &:focus {
     color: #008cef;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     font-size: 18px;
     padding-bottom: 18px;
     text-align: left;
@@ -69,7 +88,7 @@
 }
 .section-title__contacts {
   text-align: left;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     text-align: left;
   }
 }
@@ -78,7 +97,7 @@
   font-size: 16px;
   line-height: 1.25;
   color: #2b2b2b;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     font-size: 18px;
   }
 }
